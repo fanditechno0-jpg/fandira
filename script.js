@@ -9,42 +9,10 @@
         ================================================= */
 
         {
-            title: "The Hunt: Roblox 20",
+            title: "Gunung Kambuno",
             description:
-                "Event Roblox 20 tahun dengan berbagai quest dan pengalaman dari berbagai era Roblox.",
-            placeId: 74205509034203,
-            category: [
-                "viral",
-                "popular",
-                "new"
-            ],
-            tag: "VIRAL",
-            url:
-                "https://www.roblox.com/games/74205509034203"
-        },
-
-        {
-            title: "Brookhaven RP",
-            description:
-                "Kota virtual untuk roleplay, hangout, kendaraan, rumah dan eksplorasi bersama pemain lain.",
-            placeId: 4924922222,
-            category: [
-                "viral",
-                "popular",
-                "realistic",
-                "openworld",
-                "party"
-            ],
-            tag: "VIRAL",
-            url:
-                "https://www.roblox.com/games/4924922222/Brookhaven-RP"
-        },
-
-        {
-            title: "Driving Empire",
-            description:
-                "Dunia kendaraan dengan kota luas, jalan raya dan berbagai tempat untuk dieksplorasi.",
-            placeId: 3351674303,
+                "Map pendakian Indonesia dengan hutan, jalur gunung, danau, air terjun dan suasana alam yang realistis.",
+            placeId: 90996930447931,
             category: [
                 "viral",
                 "popular",
@@ -53,23 +21,66 @@
             ],
             tag: "VIRAL",
             url:
-                "https://www.roblox.com/games/3351674303/Driving-Empire"
+                "https://www.roblox.com/games/90996930447931/Gunung-Kambuno"
         },
 
         {
-            title: "DOORS",
+            title: "MOUNT TRANGGULASIH",
             description:
-                "Horror survival di hotel misterius dengan berbagai entitas dan tantangan.",
-            placeId: 6516141723,
+                "Map pendakian Gunung Tranggulasih dengan savannah, jalur gunung, cinematic mode dan berbagai fitur eksplorasi.",
+            placeId: 74052392386319,
+            category: [
+                "viral",
+                "realistic",
+                "openworld"
+            ],
+            tag: "VIRAL",
+            url:
+                "https://www.roblox.com/games/74052392386319/MOUNT-TRANGGULASIH"
+        },
+
+        {
+            title: "NUNGGUAN | Broken Silence",
+            description:
+                "Experience adventure horror dengan suasana gelap, suara mengejutkan dan momen misterius.",
+            placeId: 125847422162067,
             category: [
                 "viral",
                 "popular",
-                "rating",
                 "horror"
             ],
             tag: "VIRAL",
             url:
-                "https://www.roblox.com/games/6516141723/DOORS"
+                "https://www.roblox.com/games/125847422162067/NUNGGUAN-Broken-Silence"
+        },
+
+        {
+            title: "MOUNT SIJJIN",
+            description:
+                "Map pendakian mistis dengan suasana gunung, jumpscare, suara keras dan kejadian supernatural.",
+            placeId: 116761724761682,
+            category: [
+                "viral",
+                "horror",
+                "new"
+            ],
+            tag: "VIRAL",
+            url:
+                "https://www.roblox.com/games/116761724761682/MOUNT-SIJJIN"
+        },
+
+        {
+            title: "KERAMAT Dusun Pocong",
+            description:
+                "Horror Indonesia di pemakaman keramat desa terpencil dengan suasana malam dan kejadian mistis.",
+            placeId: 138879663836413,
+            category: [
+                "viral",
+                "horror"
+            ],
+            tag: "HORROR ID",
+            url:
+                "https://www.roblox.com/games/138879663836413/KERAMAT-Dusun-Pocong"
         },
 
 
@@ -78,26 +89,57 @@
         ================================================= */
 
         {
-            title: "Brookhaven RP",
+            title: "Gunung Kambuno",
             description:
-                "Roleplay kota dengan rumah, kendaraan, sekolah, pekerjaan dan berbagai aktivitas sosial.",
-            placeId: 4924922222,
+                "Map pendakian Sulawesi Selatan dengan lebih dari 1 juta kunjungan dan berbagai area eksplorasi.",
+            placeId: 90996930447931,
             category: [
                 "popular",
+                "viral",
                 "realistic",
-                "openworld",
-                "party"
+                "openworld"
             ],
             tag: "RAMAI",
             url:
-                "https://www.roblox.com/games/4924922222/Brookhaven-RP"
+                "https://www.roblox.com/games/90996930447931/Gunung-Kambuno"
         },
 
         {
-            title: "Driving Empire",
+            title: "NUNGGUAN | Broken Silence",
             description:
-                "Eksplorasi kota besar menggunakan berbagai kendaraan dan menikmati dunia berkendara Roblox.",
-            placeId: 3351674303,
+                "Experience adventure horror Indonesia dengan jutaan kunjungan dan suasana misterius.",
+            placeId: 125847422162067,
+            category: [
+                "popular",
+                "viral",
+                "horror"
+            ],
+            tag: "RAMAI",
+            url:
+                "https://www.roblox.com/games/125847422162067/NUNGGUAN-Broken-Silence"
+        },
+
+        {
+            title: "MOUNT TRANGGULASIH",
+            description:
+                "Map gunung dengan jalur pendakian, savannah, cinematic mode dan berbagai fitur adventure.",
+            placeId: 74052392386319,
+            category: [
+                "popular",
+                "viral",
+                "realistic",
+                "openworld"
+            ],
+            tag: "RAMAI",
+            url:
+                "https://www.roblox.com/games/74052392386319/MOUNT-TRANGGULASIH"
+        },
+
+        {
+            title: "MOUNT RINJANI",
+            description:
+                "Rekreasi Gunung Rinjani dengan hutan berkabut, medan terjal dan pemandangan Segara Anak.",
+            placeId: 138149789228609,
             category: [
                 "popular",
                 "realistic",
@@ -105,29 +147,14 @@
             ],
             tag: "RAMAI",
             url:
-                "https://www.roblox.com/games/3351674303/Driving-Empire"
+                "https://www.roblox.com/games/138149789228609/MOUNT-RINJANI"
         },
 
         {
-            title: "DOORS",
+            title: "Realistic Drive Simulator Indonesia",
             description:
-                "Pengalaman horror survival dengan eksplorasi, puzzle dan berbagai monster.",
-            placeId: 6516141723,
-            category: [
-                "popular",
-                "horror",
-                "rating"
-            ],
-            tag: "RAMAI",
-            url:
-                "https://www.roblox.com/games/6516141723/DOORS"
-        },
-
-        {
-            title: "Jailbreak",
-            description:
-                "Dunia open-world dengan polisi, kriminal, kendaraan dan berbagai lokasi kota.",
-            placeId: 606849621,
+                "Dunia open-world berkendara yang terinspirasi dari berbagai kota di Indonesia.",
+            placeId: 10189328024,
             category: [
                 "popular",
                 "realistic",
@@ -135,23 +162,7 @@
             ],
             tag: "RAMAI",
             url:
-                "https://www.roblox.com/games/606849621/Jailbreak"
-        },
-
-        {
-            title: "Livetopia RP",
-            description:
-                "Kota virtual luas untuk roleplay, eksplorasi, kendaraan dan aktivitas bersama.",
-            placeId: 6737970321,
-            category: [
-                "popular",
-                "realistic",
-                "openworld",
-                "party"
-            ],
-            tag: "RAMAI",
-            url:
-                "https://www.roblox.com/games/6737970321/Livetopia-RP"
+                "https://www.roblox.com/games/10189328024/Realistic-Drive-Simulator-Indonesia"
         },
 
 
@@ -160,55 +171,10 @@
         ================================================= */
 
         {
-            title: "DOORS",
+            title: "Gunung Kambuno",
             description:
-                "Horror survival dengan atmosfer gelap, puzzle, monster dan eksplorasi hotel.",
-            placeId: 6516141723,
-            category: [
-                "rating",
-                "horror",
-                "popular"
-            ],
-            tag: "RATING",
-            url:
-                "https://www.roblox.com/games/6516141723/DOORS"
-        },
-
-        {
-            title: "The Mimic",
-            description:
-                "Pengalaman horror dengan cerita bernuansa Jepang, dunia misterius dan jumpscare.",
-            placeId: 6243699076,
-            category: [
-                "rating",
-                "horror"
-            ],
-            tag: "RATING",
-            url:
-                "https://www.roblox.com/games/6243699076/The-Mimic"
-        },
-
-        {
-            title: "Brookhaven RP",
-            description:
-                "Dunia roleplay kota yang luas untuk bermain santai bersama teman.",
-            placeId: 4924922222,
-            category: [
-                "rating",
-                "popular",
-                "realistic",
-                "openworld"
-            ],
-            tag: "RATING",
-            url:
-                "https://www.roblox.com/games/4924922222/Brookhaven-RP"
-        },
-
-        {
-            title: "Driving Empire",
-            description:
-                "Pengalaman berkendara dengan dunia kota yang luas dan berbagai kendaraan.",
-            placeId: 3351674303,
+                "Pendakian realistis dengan hutan, danau, air terjun, jalur gunung dan berbagai fitur eksplorasi.",
+            placeId: 90996930447931,
             category: [
                 "rating",
                 "realistic",
@@ -217,21 +183,69 @@
             ],
             tag: "RATING",
             url:
-                "https://www.roblox.com/games/3351674303/Driving-Empire"
+                "https://www.roblox.com/games/90996930447931/Gunung-Kambuno"
         },
 
         {
-            title: "Epic Minigames",
+            title: "MOUNT TRANGGULASIH",
             description:
-                "Berbagai minigame singkat yang dapat dimainkan bersama pemain lain.",
-            placeId: 277751860,
+                "Map pendakian dengan suasana savannah dan berbagai fitur seperti Free Cam dan Cinematic Mode.",
+            placeId: 74052392386319,
             category: [
                 "rating",
-                "party"
+                "realistic",
+                "openworld"
             ],
             tag: "RATING",
             url:
-                "https://www.roblox.com/games/277751860/Epic-Minigames"
+                "https://www.roblox.com/games/74052392386319/MOUNT-TRANGGULASIH"
+        },
+
+        {
+            title: "MOUNT RINJANI",
+            description:
+                "Rekreasi Gunung Rinjani dengan hutan berkabut, medan terjal dan Segara Anak.",
+            placeId: 138149789228609,
+            category: [
+                "rating",
+                "realistic",
+                "openworld",
+                "popular"
+            ],
+            tag: "RATING",
+            url:
+                "https://www.roblox.com/games/138149789228609/MOUNT-RINJANI"
+        },
+
+        {
+            title: "Mount Sumbing",
+            description:
+                "Pendakian realistis dengan sistem cuaca, suhu, campfire, checkpoint dan perlengkapan hiking.",
+            placeId: 14963184269,
+            category: [
+                "rating",
+                "realistic",
+                "openworld"
+            ],
+            tag: "RATING",
+            url:
+                "https://www.roblox.com/games/14963184269/Mount-Sumbing"
+        },
+
+        {
+            title: "Mount Merbabu",
+            description:
+                "Map pendakian Gunung Merbabu dengan savannah, hutan pinus dan panorama pegunungan Jawa.",
+            placeId: 114440555601511,
+            category: [
+                "rating",
+                "realistic",
+                "openworld",
+                "new"
+            ],
+            tag: "RATING",
+            url:
+                "https://www.roblox.com/games/114440555601511/MOUNT-MERBABU"
         },
 
 
@@ -240,73 +254,85 @@
         ================================================= */
 
         {
-            title: "Driving Empire",
+            title: "MOUNT TRANGGULASIH",
             description:
-                "Kota dan jalan raya luas dengan fokus pada kendaraan dan pengalaman berkendara.",
-            placeId: 3351674303,
+                "Pendakian Gunung Tranggulasih dengan jalur alam, savannah dan suasana perjalanan yang santai.",
+            placeId: 74052392386319,
+            category: [
+                "realistic",
+                "viral",
+                "popular"
+            ],
+            tag: "REALISTIC",
+            url:
+                "https://www.roblox.com/games/74052392386319/MOUNT-TRANGGULASIH"
+        },
+
+        {
+            title: "Gunung Kambuno",
+            description:
+                "Gunung Kambuno versi Roblox dengan hutan, jalur pendakian, danau dan air terjun.",
+            placeId: 90996930447931,
             category: [
                 "realistic",
                 "popular",
-                "openworld",
-                "rating"
+                "openworld"
             ],
             tag: "REALISTIC",
             url:
-                "https://www.roblox.com/games/3351674303/Driving-Empire"
+                "https://www.roblox.com/games/90996930447931/Gunung-Kambuno"
         },
 
         {
-            title: "Brookhaven RP",
+            title: "MOUNT RINJANI",
             description:
-                "Kota virtual dengan rumah, kendaraan, sekolah dan berbagai lokasi untuk roleplay.",
-            placeId: 4924922222,
+                "Rekreasi realistis Gunung Rinjani dengan medan terjal, hutan berkabut dan Segara Anak.",
+            placeId: 138149789228609,
             category: [
                 "realistic",
                 "popular",
-                "openworld",
-                "party"
+                "openworld"
             ],
             tag: "REALISTIC",
             url:
-                "https://www.roblox.com/games/4924922222/Brookhaven-RP"
+                "https://www.roblox.com/games/138149789228609/MOUNT-RINJANI"
         },
 
         {
-            title: "Livetopia RP",
+            title: "Mount Sumbing",
             description:
-                "Kota virtual dengan rumah modern, kendaraan dan banyak area untuk eksplorasi.",
-            placeId: 6737970321,
+                "Map realistis dengan tiga puncak, cuaca, kabut, hujan, camp dan cinematic view.",
+            placeId: 14963184269,
             category: [
                 "realistic",
-                "popular",
-                "openworld",
-                "party"
+                "rating",
+                "openworld"
             ],
             tag: "REALISTIC",
             url:
-                "https://www.roblox.com/games/6737970321/Livetopia-RP"
+                "https://www.roblox.com/games/14963184269/Mount-Sumbing"
         },
 
         {
-            title: "Berry Avenue RP",
+            title: "Mount Merbabu",
             description:
-                "Kota roleplay dengan rumah, sekolah, rumah sakit, kendaraan dan berbagai lokasi.",
-            placeId: 8481844229,
+                "Pendakian Merbabu dengan savannah, hutan pinus dan panorama laut awan Jawa Tengah.",
+            placeId: 114440555601511,
             category: [
                 "realistic",
                 "openworld",
-                "party"
+                "new"
             ],
             tag: "REALISTIC",
             url:
-                "https://www.roblox.com/games/8481844229/Berry-Avenue-RP"
+                "https://www.roblox.com/games/114440555601511/MOUNT-MERBABU"
         },
 
         {
-            title: "Jailbreak",
+            title: "Realistic Drive Simulator Indonesia",
             description:
-                "Kota open-world dengan kendaraan, polisi, kriminal dan berbagai area untuk dijelajahi.",
-            placeId: 606849621,
+                "Kota fiksi yang terinspirasi dari beberapa kota Indonesia dengan sistem driving dan roleplay.",
+            placeId: 10189328024,
             category: [
                 "realistic",
                 "openworld",
@@ -314,7 +340,22 @@
             ],
             tag: "REALISTIC",
             url:
-                "https://www.roblox.com/games/606849621/Jailbreak"
+                "https://www.roblox.com/games/10189328024/Realistic-Drive-Simulator-Indonesia"
+        },
+
+        {
+            title: "Mount IJEN",
+            description:
+                "Eksplorasi Kawah Ijen dengan hutan tropis, kabut, kawah dan fenomena Blue Fire.",
+            placeId: 98736259765840,
+            category: [
+                "realistic",
+                "openworld",
+                "new"
+            ],
+            tag: "REALISTIC",
+            url:
+                "https://www.roblox.com/games/98736259765840/MOUNT-IJEN"
         },
 
 
@@ -323,81 +364,93 @@
         ================================================= */
 
         {
-            title: "Jailbreak",
+            title: "Realistic Drive Simulator Indonesia",
             description:
-                "Open-world kota dengan kendaraan, polisi, kriminal dan berbagai lokasi.",
-            placeId: 606849621,
+                "Jelajahi kota Indonesia dalam dunia open-world, berkendara, bersosialisasi dan roleplay.",
+            placeId: 10189328024,
             category: [
                 "openworld",
-                "popular",
+                "realistic",
+                "popular"
+            ],
+            tag: "OPEN WORLD",
+            url:
+                "https://www.roblox.com/games/10189328024/Realistic-Drive-Simulator-Indonesia"
+        },
+
+        {
+            title: "Gunung Kambuno",
+            description:
+                "Eksplorasi gunung dengan hutan, danau, air terjun, jalur pendakian dan puncak.",
+            placeId: 90996930447931,
+            category: [
+                "openworld",
+                "realistic",
+                "popular"
+            ],
+            tag: "OPEN WORLD",
+            url:
+                "https://www.roblox.com/games/90996930447931/Gunung-Kambuno"
+        },
+
+        {
+            title: "MOUNT RINJANI",
+            description:
+                "Eksplorasi jalur Gunung Rinjani dari hutan sampai kawasan Segara Anak.",
+            placeId: 138149789228609,
+            category: [
+                "openworld",
+                "realistic",
+                "popular"
+            ],
+            tag: "OPEN WORLD",
+            url:
+                "https://www.roblox.com/games/138149789228609/MOUNT-RINJANI"
+        },
+
+        {
+            title: "MOUNT TRANGGULASIH",
+            description:
+                "Jelajahi jalur gunung, savannah dan berbagai area pemandangan Tranggulasih.",
+            placeId: 74052392386319,
+            category: [
+                "openworld",
                 "realistic",
                 "viral"
             ],
             tag: "OPEN WORLD",
             url:
-                "https://www.roblox.com/games/606849621/Jailbreak"
+                "https://www.roblox.com/games/74052392386319/MOUNT-TRANGGULASIH"
         },
 
         {
-            title: "Brookhaven RP",
+            title: "Mount Merbabu",
             description:
-                "Jelajahi kota, rumah, jalan dan berbagai tempat bersama pemain lain.",
-            placeId: 4924922222,
-            category: [
-                "openworld",
-                "popular",
-                "realistic",
-                "party"
-            ],
-            tag: "OPEN WORLD",
-            url:
-                "https://www.roblox.com/games/4924922222/Brookhaven-RP"
-        },
-
-        {
-            title: "Driving Empire",
-            description:
-                "Eksplorasi dunia luas dengan berbagai kendaraan dan jalan raya.",
-            placeId: 3351674303,
-            category: [
-                "openworld",
-                "popular",
-                "realistic"
-            ],
-            tag: "OPEN WORLD",
-            url:
-                "https://www.roblox.com/games/3351674303/Driving-Empire"
-        },
-
-        {
-            title: "Livetopia RP",
-            description:
-                "Dunia kota virtual dengan banyak lokasi untuk roleplay dan eksplorasi.",
-            placeId: 6737970321,
-            category: [
-                "openworld",
-                "popular",
-                "realistic",
-                "party"
-            ],
-            tag: "OPEN WORLD",
-            url:
-                "https://www.roblox.com/games/6737970321/Livetopia-RP"
-        },
-
-        {
-            title: "Berry Avenue RP",
-            description:
-                "Kota luas dengan berbagai tempat seperti sekolah, rumah sakit, toko dan rumah.",
-            placeId: 8481844229,
+                "Eksplorasi Gunung Merbabu dengan savannah, hutan pinus dan panorama pegunungan.",
+            placeId: 114440555601511,
             category: [
                 "openworld",
                 "realistic",
-                "party"
+                "new"
             ],
             tag: "OPEN WORLD",
             url:
-                "https://www.roblox.com/games/8481844229/Berry-Avenue-RP"
+                "https://www.roblox.com/games/114440555601511/MOUNT-MERBABU"
+        },
+
+        {
+            title: "Mount IJEN",
+            description:
+                "Jelajahi jalur Kawah Ijen dan nikmati suasana alam serta Blue Fire pada malam hari.",
+            placeId: 98736259765840,
+            category: [
+                "openworld",
+                "realistic",
+                "new"
+            ],
+            tag: "OPEN WORLD",
+            url:
+                "https://www.roblox.com/games/98736259765840/MOUNT-IJEN"
         },
 
 
@@ -406,62 +459,76 @@
         ================================================= */
 
         {
-            title: "DOORS",
+            title: "NUNGGUAN | Broken Silence",
             description:
-                "Masuki hotel misterius dan bertahan hidup dari berbagai entitas berbahaya.",
-            placeId: 6516141723,
+                "Horror adventure dengan lingkungan gelap, suara keras dan momen mengejutkan.",
+            placeId: 125847422162067,
             category: [
                 "horror",
                 "viral",
-                "popular",
-                "rating"
-            ],
-            tag: "HORROR",
-            url:
-                "https://www.roblox.com/games/6516141723/DOORS"
-        },
-
-        {
-            title: "The Mimic",
-            description:
-                "Horror bernuansa Jepang dengan cerita, monster, dunia misterius dan jumpscare.",
-            placeId: 6243699076,
-            category: [
-                "horror",
-                "rating"
-            ],
-            tag: "HORROR",
-            url:
-                "https://www.roblox.com/games/6243699076/The-Mimic"
-        },
-
-        {
-            title: "Piggy",
-            description:
-                "Survival horror dengan puzzle, kejar-kejaran dan berbagai chapter.",
-            placeId: 4623386862,
-            category: [
-                "horror",
                 "popular"
             ],
-            tag: "HORROR",
+            tag: "HORROR ID",
             url:
-                "https://www.roblox.com/games/4623386862/Piggy"
+                "https://www.roblox.com/games/125847422162067/NUNGGUAN-Broken-Silence"
         },
 
         {
-            title: "Murder Mystery 2",
+            title: "KERAMAT Dusun Pocong",
             description:
-                "Game misteri multiplayer dengan pembunuh, sheriff dan innocent.",
-            placeId: 142823291,
+                "Horror Indonesia bertema penjaga makam di desa terpencil dengan kejadian mistis.",
+            placeId: 138879663836413,
             category: [
                 "horror",
-                "popular",
-                "party"
+                "viral"
             ],
-            tag: "HORROR",
+            tag: "HORROR ID",
             url:
-                "https://www.roblox.com/games/142823291/Murder-Mystery-2"
+                "https://www.roblox.com/games/138879663836413/KERAMAT-Dusun-Pocong"
+        },
+
+        {
+            title: "MOUNT SIJJIN",
+            description:
+                "Pendakian mistis dengan jumpscare, suara keras dan berbagai gangguan supernatural.",
+            placeId: 116761724761682,
+            category: [
+                "horror",
+                "viral",
+                "new"
+            ],
+            tag: "HORROR ID",
+            url:
+                "https://www.roblox.com/games/116761724761682/MOUNT-SIJJIN"
+        },
+
+        {
+            title: "MOUNT SUMBING 👻",
+            description:
+                "Pendakian terlarang dengan hantu pendaki, kabut, hutan dan perlengkapan bertahan hidup.",
+            placeId: 74573694862156,
+            category: [
+                "horror",
+                "new"
+            ],
+            tag: "HORROR ID",
+            url:
+                "https://www.roblox.com/games/74573694862156/MOUNT-SUMBING"
+        },
+
+        {
+            title: "MOUNT IJEN HORROR",
+            description:
+                "Versi horror Gunung Ijen dengan kabut, suasana malam dan eksplorasi kawasan kawah.",
+            placeId: 98736259765840,
+            category: [
+                "horror",
+                "new",
+                "realistic"
+            ],
+            tag: "HORROR ID",
+            url:
+                "https://www.roblox.com/games/98736259765840/MOUNT-IJEN"
         },
 
 
@@ -470,79 +537,65 @@
         ================================================= */
 
         {
-            title: "Epic Minigames",
+            title: "MOUNTAIN CAMP INDONESIA",
             description:
-                "Kumpulan minigame cepat yang cocok dimainkan bersama teman.",
-            placeId: 277751860,
+                "Map hangout bertema camping dan pegunungan Indonesia untuk bersantai bersama teman.",
+            placeId: 95656495100644,
             category: [
                 "party",
-                "rating"
+                "realistic",
+                "openworld"
             ],
-            tag: "PARTY",
+            tag: "HANGOUT",
             url:
-                "https://www.roblox.com/games/277751860/Epic-Minigames"
+                "https://www.roblox.com/games/95656495100644/Ekspedisi-Gunung-Rinjani"
         },
 
         {
-            title: "Brookhaven RP",
+            title: "MOUNT TRANGGULASIH",
             description:
-                "Hangout, roleplay, kendaraan dan berbagai aktivitas sosial dalam satu kota.",
-            placeId: 4924922222,
+                "Map gunung dengan spot pemandangan, cinematic mode dan fitur bermain bersama teman.",
+            placeId: 74052392386319,
+            category: [
+                "party",
+                "realistic",
+                "openworld",
+                "viral"
+            ],
+            tag: "HANGOUT",
+            url:
+                "https://www.roblox.com/games/74052392386319/MOUNT-TRANGGULASIH"
+        },
+
+        {
+            title: "Gunung Kambuno",
+            description:
+                "Pendakian bersama teman dengan fitur carry, sepeda, kamera dan eksplorasi alam.",
+            placeId: 90996930447931,
             category: [
                 "party",
                 "popular",
                 "realistic",
                 "openworld"
             ],
-            tag: "PARTY",
+            tag: "HANGOUT",
             url:
-                "https://www.roblox.com/games/4924922222/Brookhaven-RP"
+                "https://www.roblox.com/games/90996930447931/Gunung-Kambuno"
         },
 
         {
-            title: "Livetopia RP",
+            title: "MOUNT RINJANI",
             description:
-                "Hangout dan roleplay di kota virtual dengan banyak lokasi untuk dimainkan bersama.",
-            placeId: 6737970321,
-            category: [
-                "party",
-                "popular",
-                "realistic",
-                "openworld"
-            ],
-            tag: "PARTY",
-            url:
-                "https://www.roblox.com/games/6737970321/Livetopia-RP"
-        },
-
-        {
-            title: "Berry Avenue RP",
-            description:
-                "Roleplay dan hangout bersama teman di kota virtual Berry Avenue.",
-            placeId: 8481844229,
+                "Ekspedisi gunung untuk menjelajah, mengambil foto dan menikmati pemandangan bersama teman.",
+            placeId: 138149789228609,
             category: [
                 "party",
                 "realistic",
                 "openworld"
             ],
-            tag: "PARTY",
+            tag: "HANGOUT",
             url:
-                "https://www.roblox.com/games/8481844229/Berry-Avenue-RP"
-        },
-
-        {
-            title: "Murder Mystery 2",
-            description:
-                "Game sosial misteri yang seru dimainkan bersama teman dalam satu server.",
-            placeId: 142823291,
-            category: [
-                "party",
-                "popular",
-                "horror"
-            ],
-            tag: "PARTY",
-            url:
-                "https://www.roblox.com/games/142823291/Murder-Mystery-2"
+                "https://www.roblox.com/games/138149789228609/MOUNT-RINJANI"
         },
 
 
@@ -551,66 +604,95 @@
         ================================================= */
 
         {
-            title: "The Hunt: Roblox 20",
+            title: "Gunung Kambuno",
             description:
-                "Event Roblox 20 tahun yang membawa pemain menjelajahi berbagai era Roblox.",
-            placeId: 74205509034203,
-            category: [
-                "new",
-                "viral",
-                "popular"
-            ],
-            tag: "MAP BARU",
-            url:
-                "https://www.roblox.com/games/74205509034203"
-        },
-
-        {
-            title: "Jailbreak",
-            description:
-                "Dunia Jailbreak dengan kota luas, kendaraan dan berbagai konten yang terus berkembang.",
-            placeId: 606849621,
+                "Map Gunung Kambuno dengan pembaruan terbaru, fitur cuaca, malam, sepeda dan eksplorasi.",
+            placeId: 90996930447931,
             category: [
                 "new",
                 "viral",
                 "popular",
-                "openworld"
-            ],
-            tag: "UPDATE",
-            url:
-                "https://www.roblox.com/games/606849621/Jailbreak"
-        },
-
-        {
-            title: "Livetopia RP",
-            description:
-                "Kota roleplay yang terus mendapatkan pembaruan dan area baru.",
-            placeId: 6737970321,
-            category: [
-                "new",
-                "realistic",
-                "openworld",
-                "party"
-            ],
-            tag: "UPDATE",
-            url:
-                "https://www.roblox.com/games/6737970321/Livetopia-RP"
-        },
-
-        {
-            title: "Brookhaven RP",
-            description:
-                "Dunia kota roleplay dengan pembaruan kendaraan, lokasi dan konten.",
-            placeId: 4924922222,
-            category: [
-                "new",
-                "popular",
                 "realistic",
                 "openworld"
             ],
-            tag: "UPDATE",
+            tag: "NEW",
             url:
-                "https://www.roblox.com/games/4924922222/Brookhaven-RP"
+                "https://www.roblox.com/games/90996930447931/Gunung-Kambuno"
+        },
+
+        {
+            title: "Mount Sumbing",
+            description:
+                "Map Gunung Sumbing dengan tiga puncak, cuaca, kabut, hujan, freecam dan cinematic view.",
+            placeId: 118392527498403,
+            category: [
+                "new",
+                "realistic",
+                "openworld"
+            ],
+            tag: "NEW",
+            url:
+                "https://www.roblox.com/games/118392527498403/Mount-Sumbing"
+        },
+
+        {
+            title: "Mount Merbabu",
+            description:
+                "Map baru Gunung Merbabu dengan savannah, hutan pinus dan panorama pegunungan Jawa.",
+            placeId: 114440555601511,
+            category: [
+                "new",
+                "realistic",
+                "openworld"
+            ],
+            tag: "NEW",
+            url:
+                "https://www.roblox.com/games/114440555601511/MOUNT-MERBABU"
+        },
+
+        {
+            title: "Ekspedisi Gunung Rinjani",
+            description:
+                "Map ekspedisi baru dengan spot foto, checkpoint, dance, sepeda dan ATV.",
+            placeId: 95656495100644,
+            category: [
+                "new",
+                "party",
+                "realistic",
+                "openworld"
+            ],
+            tag: "NEW",
+            url:
+                "https://www.roblox.com/games/95656495100644/Ekspedisi-Gunung-Rinjani"
+        },
+
+        {
+            title: "MOUNT SIJJIN",
+            description:
+                "Map hiking mistis dengan jumpscare, suara keras dan suasana supernatural.",
+            placeId: 116761724761682,
+            category: [
+                "new",
+                "horror",
+                "viral"
+            ],
+            tag: "NEW HORROR",
+            url:
+                "https://www.roblox.com/games/116761724761682/MOUNT-SIJJIN"
+        },
+
+        {
+            title: "MOUNT SUMBING 👻",
+            description:
+                "Pendakian terlarang bertema horror dengan hantu pendaki, kabut dan hutan gelap.",
+            placeId: 74573694862156,
+            category: [
+                "new",
+                "horror"
+            ],
+            tag: "NEW HORROR",
+            url:
+                "https://www.roblox.com/games/74573694862156/MOUNT-SUMBING"
         }
 
     ],
