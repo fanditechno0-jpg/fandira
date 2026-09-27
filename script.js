@@ -1,267 +1,293 @@
-// =====================================================
+// ============================================================
 // FANDIRA - ROBLOX PORTAL
-// STAGE 1 - REAL CONTENT + REAL ROBLOX THUMBNAILS
-// =====================================================
+// DATA TERPISAH:
+// UGC | MAP | EXPERIENCE | BERITA | CREATOR | TRENDING
+// ============================================================
 
-const ugcData = [
-  {
-    title: "The Hunt: Roblox 20",
-    creator: "Roblox Presents",
-    status: "EVENT",
-    price: "Limited Event",
-    link: "https://www.roblox.com/games/74205509034203/The-Hunt-Roblox-20",
-    image:
-      "https://tr.rbxcdn.com/180DAY-8f0e7f9c0c6f9c7c2f5c2c7e8f5c5c9d/768/432/Image/Webp/noFilter"
-  },
-  {
-    title: "Roblox 20th Anniversary",
-    creator: "Roblox",
-    status: "EVENT",
-    price: "Limited",
-    link: "https://www.roblox.com/games/74205509034203/The-Hunt-Roblox-20",
-    image:
-      "https://tr.rbxcdn.com/180DAY-8f0e7f9c0c6f9c7c2f5c2c7e8f5c5c9d/768/432/Image/Webp/noFilter"
-  },
-  {
-    title: "The Hunt UGC",
-    creator: "Roblox",
-    status: "HUNT",
-    price: "Event Reward",
-    link:
-      "https://www.roblox.com/spotlight/the-hunt-roblox-20",
-    image:
-      "https://tr.rbxcdn.com/180DAY-8f0e7f9c0c6f9c7c2f5c2c7e8f5c5c9d/768/432/Image/Webp/noFilter"
-  }
-];
+const FANDIRA = {
 
+  // ==========================================================
+  // 1. UGC TERKINI
+  // ==========================================================
+  ugc: [
+    {
+      title: "The Hunt: Roblox 20",
+      creator: "Roblox",
+      type: "EVENT UGC",
+      status: "TERKINI",
+      link: "https://www.roblox.com/catalog",
+      image: "https://tr.rbxcdn.com/180DAY-8f0e7f9c0c6f9c7c2f5c2c7e8f5c5c9d/768/432/Image/Webp/noFilter"
+    },
 
-// =====================================================
-// GAME DATA
-// =====================================================
+    {
+      title: "Roblox 20th Anniversary",
+      creator: "Roblox",
+      type: "ANNIVERSARY",
+      status: "EVENT",
+      link: "https://www.roblox.com/catalog",
+      image: "https://tr.rbxcdn.com/180DAY-8f0e7f9c0c6f9c7c2f5c2c7e8f5c5c9d/768/432/Image/Webp/noFilter"
+    },
 
-// Universe IDs
-// Thumbnail akan diambil langsung dari Roblox API.
-
-const gameData = [
-  {
-    title: "The Hunt: Roblox 20",
-    description:
-      "Rayakan 20 tahun Roblox melalui event resmi yang membawa pemain menjelajahi berbagai era Roblox.",
-    universeId: "74205509034203",
-    link:
-      "https://www.roblox.com/games/74205509034203/The-Hunt-Roblox-20",
-    category: "EVENT"
-  },
-
-  {
-    title: "Jailbreak",
-    description:
-      "Game aksi kriminal populer Roblox yang menjadi salah satu game penting dalam sejarah platform.",
-    universeId: "606849621",
-    link:
-      "https://www.roblox.com/games/606849621/Jailbreak",
-    category: "POPULAR"
-  },
-
-  {
-    title: "Adopt Me!",
-    description:
-      "Game roleplay dan pet collection populer dengan komunitas Roblox yang sangat besar.",
-    universeId: "920587237",
-    link:
-      "https://www.roblox.com/games/920587237/Adopt-Me",
-    category: "ROLEPLAY"
-  },
-
-  {
-    title: "Grow a Garden",
-    description:
-      "Game berkebun Roblox yang menjadi salah satu fenomena besar dalam tren Roblox.",
-    universeId: "126884695634066",
-    link:
-      "https://www.roblox.com/games/126884695634066/Grow-a-Garden",
-    category: "TRENDING"
-  },
-
-  {
-    title: "RIVALS",
-    description:
-      "FPS kompetitif Roblox dengan sistem pertarungan cepat dan berbagai mode permainan.",
-    universeId: "17625359962",
-    link:
-      "https://www.roblox.com/games/17625359962/RIVALS",
-    category: "FPS"
-  },
-
-  {
-    title: "DOORS",
-    description:
-      "Game horror Roblox dengan eksplorasi ruangan, puzzle, dan berbagai entity misterius.",
-    universeId: "6516141723",
-    link:
-      "https://www.roblox.com/games/6516141723/DOORS",
-    category: "HORROR"
-  },
-
-  {
-    title: "99 Nights in the Forest",
-    description:
-      "Survival horror Roblox dengan tantangan bertahan hidup di dalam hutan.",
-    universeId: "79546208627805",
-    link:
-      "https://www.roblox.com/games/79546208627805/99-Nights-in-the-Forest",
-    category: "SURVIVAL"
-  },
-
-  {
-    title: "Jujutsu Shenanigans",
-    description:
-      "Arena fighting Roblox bertema Jujutsu dengan pertarungan cepat dan kemampuan karakter.",
-    universeId: "9391468976",
-    link:
-      "https://www.roblox.com/games/9391468976/Jujutsu-Shenanigans",
-    category: "FIGHTING"
-  }
-];
+    {
+      title: "The Hunt Rewards",
+      creator: "Roblox",
+      type: "REWARD",
+      status: "LIMITED EVENT",
+      link: "https://www.roblox.com/catalog",
+      image: "https://tr.rbxcdn.com/180DAY-8f0e7f9c0c6f9c7c2f5c2c7e8f5c5c9d/768/432/Image/Webp/noFilter"
+    }
+  ],
 
 
-// =====================================================
-// NEWS DATA
-// =====================================================
+  // ==========================================================
+  // 2. MAP ROBLOX PILIHAN
+  // ==========================================================
+  maps: [
+    {
+      title: "The Hunt: Roblox 20",
+      description:
+        "Dunia event resmi Roblox untuk merayakan 20 tahun perjalanan Roblox.",
+      category: "EVENT",
+      universeId: "74205509034203",
+      link:
+        "https://www.roblox.com/games/74205509034203/The-Hunt-Roblox-20"
+    },
 
-const newsData = [
-  {
-    title: "The Hunt: Roblox 20 Resmi Dimulai",
-    description:
-      "Roblox merayakan ulang tahun ke-20 melalui event The Hunt: Roblox 20 yang membawa pemain menjelajahi sejarah Roblox.",
-    date: "16 September 2026",
-    source: "Roblox News",
-    link:
-      "https://about.roblox.com/id/newsroom/2026/09/join-the-hunt-roblox-20",
-    image:
-      "https://about.roblox.com/wp-content/uploads/2026/09/Roblox20_TheHunt_Hero.jpg"
-  },
+    {
+      title: "Jailbreak",
+      description:
+        "Dunia open-world kriminal dengan polisi, kendaraan dan berbagai aksi.",
+      category: "OPEN WORLD",
+      universeId: "606849621",
+      link:
+        "https://www.roblox.com/games/606849621/Jailbreak"
+    },
 
-  {
-    title: "The Hunt: Roblox 20",
-    description:
-      "Mainkan berbagai game dari 20 tahun sejarah Roblox dan selesaikan quest untuk membuka hadiah virtual.",
-    date: "17 September 2026",
-    source: "Roblox",
-    link:
-      "https://www.roblox.com/id/spotlight/the-hunt-roblox-20",
-    image:
-      "https://tr.rbxcdn.com/180DAY-8f0e7f9c0c6f9c7c2f5c2c7e8f5c5c9d/768/432/Image/Webp/noFilter"
-  },
+    {
+      title: "Adopt Me!",
+      description:
+        "Dunia roleplay dengan rumah, pet, trading dan aktivitas bersama pemain.",
+      category: "ROLEPLAY",
+      universeId: "920587237",
+      link:
+        "https://www.roblox.com/games/920587237/Adopt-Me"
+    },
 
-  {
-    title: "Roblox Innovation Awards 2026",
-    description:
-      "Roblox kembali menyoroti berbagai creator dan experience yang menjadi bagian penting dari perkembangan platform.",
-    date: "2026",
-    source: "Roblox News",
-    link:
-      "https://about.roblox.com/id/newsroom/2026/09/2026-roblox-innovation-awards",
-    image:
-      "https://about.roblox.com/wp-content/uploads/2026/09/innovation-awards.jpg"
-  },
-
-  {
-    title: "Roblox Memasuki Era Baru",
-    description:
-      "Perkembangan Roblox Creator dan ekosistem kreator terus menjadi bagian penting dari masa depan platform.",
-    date: "2026",
-    source: "Roblox News",
-    link:
-      "https://about.roblox.com/id/newsroom",
-    image:
-      "https://about.roblox.com/wp-content/uploads/2026/09/roblox-creator.jpg"
-  }
-];
+    {
+      title: "Grow a Garden",
+      description:
+        "Dunia berkebun dengan sistem menanam, memanen dan mengembangkan kebun.",
+      category: "TRENDING",
+      universeId: "126884695634066",
+      link:
+        "https://www.roblox.com/games/126884695634066/Grow-a-Garden"
+    }
+  ],
 
 
-// =====================================================
+  // ==========================================================
+  // 3. EXPERIENCE ROBLOX TERKINI
+  // ==========================================================
+  experiences: [
+    {
+      title: "RIVALS",
+      description:
+        "FPS kompetitif dengan pertarungan cepat dari duel 1v1 sampai 5v5.",
+      category: "FPS",
+      universeId: "17625359962",
+      link:
+        "https://www.roblox.com/games/17625359962/RIVALS"
+    },
+
+    {
+      title: "DOORS",
+      description:
+        "Horror experience dengan berbagai ruangan, puzzle dan entity misterius.",
+      category: "HORROR",
+      universeId: "6516141723",
+      link:
+        "https://www.roblox.com/games/6516141723/DOORS"
+    },
+
+    {
+      title: "99 Nights in the Forest",
+      description:
+        "Survival horror dengan tantangan bertahan hidup di dalam hutan.",
+      category: "SURVIVAL",
+      universeId: "79546208627805",
+      link:
+        "https://www.roblox.com/games/79546208627805/99-Nights-in-the-Forest"
+    },
+
+    {
+      title: "Jujutsu Shenanigans",
+      description:
+        "Arena fighting dengan pertarungan cepat dan kemampuan karakter.",
+      category: "FIGHTING",
+      universeId: "9391468976",
+      link:
+        "https://www.roblox.com/games/9391468976/Jujutsu-Shenanigans"
+    }
+  ],
+
+
+  // ==========================================================
+  // 4. BERITA ROBLOX
+  // ==========================================================
+  news: [
+    {
+      title: "Join The Hunt: Roblox 20",
+      description:
+        "Roblox merayakan ulang tahun ke-20 melalui event The Hunt: Roblox 20.",
+      date: "16 September 2026",
+      source: "Roblox News",
+      link:
+        "https://about.roblox.com/id/newsroom/2026/09/join-the-hunt-roblox-20",
+      image:
+        "https://about.roblox.com/wp-content/uploads/2026/09/Roblox20_TheHunt_Hero.jpg"
+    },
+
+    {
+      title: "Roblox Innovation Awards 2026",
+      description:
+        "Roblox mengumumkan game, creator dan studio yang mendapat penghargaan tahun 2026.",
+      date: "12 September 2026",
+      source: "Roblox News",
+      link:
+        "https://about.roblox.com/id/newsroom/2026/09/2026-roblox-innovation-awards",
+      image:
+        "https://about.roblox.com/wp-content/uploads/2026/09/innovation-awards.jpg"
+    },
+
+    {
+      title: "RDC 2026: Dunia Membutuhkan Lebih Banyak Bermain",
+      description:
+        "Roblox membahas masa depan platform, creator dan teknologi pembangunan experience.",
+      date: "11 September 2026",
+      source: "Roblox News",
+      link:
+        "https://about.roblox.com/id/newsroom/2026/09/rdc-2026-the-world-needs-more-play",
+      image:
+        "https://about.roblox.com/wp-content/uploads/2026/09/rdc-2026.jpg"
+    }
+  ],
+
+
+  // ==========================================================
+  // 5. ROBLOX CREATOR / STUDIO
+  // ==========================================================
+  creator: [
+    {
+      title: "Roblox Creator Hub",
+      description:
+        "Pusat dokumentasi resmi untuk developer dan creator Roblox.",
+      category: "CREATOR",
+      link:
+        "https://create.roblox.com/docs",
+      image:
+        "https://tr.rbxcdn.com/180DAY-8f0e7f9c0c6f9c7c2f5c2c7e8f5c5c9d/768/432/Image/Webp/noFilter"
+    },
+
+    {
+      title: "Roblox Studio",
+      description:
+        "Tools utama untuk membuat experience, scripting dan berbagai konten Roblox.",
+      category: "STUDIO",
+      link:
+        "https://create.roblox.com/",
+      image:
+        "https://tr.rbxcdn.com/180DAY-8f0e7f9c0c6f9c7c2f5c2c7e8f5c5c9d/768/432/Image/Webp/noFilter"
+    },
+
+    {
+      title: "Creator Store",
+      description:
+        "Tempat mencari berbagai asset yang dapat digunakan creator Roblox.",
+      category: "ASSET",
+      link:
+        "https://create.roblox.com/store",
+      image:
+        "https://tr.rbxcdn.com/180DAY-8f0e7f9c0c6f9c7c2f5c2c7e8f5c5c9d/768/432/Image/Webp/noFilter"
+    }
+  ],
+
+
+  // ==========================================================
+  // 6. TRENDING ROBLOX
+  // ==========================================================
+  trending: [
+    {
+      rank: 1,
+      title: "The Hunt: Roblox 20",
+      type: "EVENT",
+      link:
+        "https://www.roblox.com/games/74205509034203/The-Hunt-Roblox-20"
+    },
+
+    {
+      rank: 2,
+      title: "RIVALS",
+      type: "EXPERIENCE",
+      link:
+        "https://www.roblox.com/games/17625359962/RIVALS"
+    },
+
+    {
+      rank: 3,
+      title: "Grow a Garden",
+      type: "EXPERIENCE",
+      link:
+        "https://www.roblox.com/games/126884695634066/Grow-a-Garden"
+    },
+
+    {
+      rank: 4,
+      title: "DOORS",
+      type: "EXPERIENCE",
+      link:
+        "https://www.roblox.com/games/6516141723/DOORS"
+    }
+  ]
+
+};
+
+
+// ============================================================
 // HELPER
-// =====================================================
+// ============================================================
 
-function escapeHTML(text) {
+function escapeHTML(value) {
+
   const div = document.createElement("div");
-  div.textContent = text ?? "";
+
+  div.textContent = value ?? "";
+
   return div.innerHTML;
+
 }
 
 
-// =====================================================
-// ROBLOX THUMBNAIL
-// =====================================================
+// ============================================================
+// THUMBNAIL EXPERIENCE ROBLOX
+// ============================================================
 
-function robloxThumbnail(universeId) {
-  return `https://thumbnails.roblox.com/v1/games/multiget/thumbnails?universeIds=${universeId}&countPerUniverse=1&defaults=true&size=768x432&format=Png&isCircular=false`;
-}
-
-
-// =====================================================
-// GAME CARD
-// =====================================================
-
-function createGameCard(game) {
-  const card = document.createElement("article");
-  card.className = "game-card";
-
-  card.innerHTML = `
-    <a
-      href="${game.link}"
-      target="_blank"
-      rel="noopener noreferrer"
-      class="game-link"
-    >
-
-      <div class="game-image">
-        <img
-          src=""
-          alt="${escapeHTML(game.title)}"
-          loading="lazy"
-          data-universe-id="${game.universeId}"
-        >
-
-        <span class="game-badge">
-          ${escapeHTML(game.category)}
-        </span>
-      </div>
-
-      <div class="game-content">
-        <h3>${escapeHTML(game.title)}</h3>
-
-        <p>
-          ${escapeHTML(game.description)}
-        </p>
-
-        <span class="game-button">
-          Lihat di Roblox →
-        </span>
-      </div>
-
-    </a>
-  `;
-
-  return card;
-}
-
-
-// =====================================================
-// LOAD GAME THUMBNAIL
-// =====================================================
-
-async function loadGameThumbnail(img) {
-  const universeId = img.dataset.universeId;
+async function getRobloxThumbnail(universeId) {
 
   try {
-    const response = await fetch(
-      `https://thumbnails.roblox.com/v1/games/multiget/thumbnails?universeIds=${universeId}&countPerUniverse=1&defaults=true&size=768x432&format=Png&isCircular=false`
-    );
+
+    const url =
+      `https://thumbnails.roblox.com/v1/games/multiget/thumbnails` +
+      `?universeIds=${universeId}` +
+      `&countPerUniverse=1` +
+      `&defaults=true` +
+      `&size=768x432` +
+      `&format=Png` +
+      `&isCircular=false`;
+
+    const response = await fetch(url);
 
     if (!response.ok) {
-      throw new Error("Thumbnail request failed");
+      throw new Error("Thumbnail API error");
     }
 
     const data = await response.json();
@@ -272,158 +298,61 @@ async function loadGameThumbnail(img) {
       data.data[0].thumbnails &&
       data.data[0].thumbnails[0]
     ) {
-      img.src = data.data[0].thumbnails[0].imageUrl;
+
+      return data.data[0].thumbnails[0].imageUrl;
+
     }
+
   } catch (error) {
+
     console.warn(
-      "Thumbnail Roblox gagal dimuat:",
-      universeId,
-      error
+      "Gagal mengambil thumbnail Roblox:",
+      universeId
     );
 
-    // fallback
-    img.src =
-      "https://tr.rbxcdn.com/180DAY-8f0e7f9c0c6f9c7c2f5c2c7e8f5c5c9d/768/432/Image/Webp/noFilter";
   }
+
+  return "";
+
 }
 
 
-// =====================================================
-// RENDER GAMES
-// =====================================================
+// ============================================================
+// LOAD SEMUA THUMBNAIL
+// ============================================================
 
-function renderGames() {
-  const container =
-    document.querySelector("#gamesGrid") ||
-    document.querySelector(".games-grid") ||
-    document.querySelector("#games .grid");
+async function loadThumbnails(container) {
 
-  if (!container) return;
+  const images =
+    container.querySelectorAll(
+      "img[data-universe-id]"
+    );
 
-  container.innerHTML = "";
+  for (const img of images) {
 
-  gameData.forEach((game) => {
-    const card = createGameCard(game);
+    const universeId =
+      img.dataset.universeId;
 
-    container.appendChild(card);
+    const thumbnail =
+      await getRobloxThumbnail(universeId);
 
-    const img = card.querySelector("img");
+    if (thumbnail) {
 
-    loadGameThumbnail(img);
-  });
-}
+      img.src = thumbnail;
 
+    }
 
-// =====================================================
-// UGC
-// =====================================================
-
-function renderUGC() {
-  const container =
-    document.querySelector("#ugcGrid") ||
-    document.querySelector(".ugc-grid") ||
-    document.querySelector("#ugc .grid");
-
-  if (!container) return;
-
-  container.innerHTML = "";
-
-  ugcData.forEach((item) => {
-    const card = document.createElement("article");
-
-    card.className = "ugc-card";
-
-    card.innerHTML = `
-      <a
-        href="${item.link}"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-
-        <div class="ugc-image">
-          <img
-            src="${item.image}"
-            alt="${escapeHTML(item.title)}"
-            loading="lazy"
-          >
-
-          <span class="ugc-status">
-            ${escapeHTML(item.status)}
-          </span>
-        </div>
-
-        <div class="ugc-content">
-
-          <h3>
-            ${escapeHTML(item.title)}
-          </h3>
-
-          <p>
-            ${escapeHTML(item.creator)}
-          </p>
-
-          <strong>
-            ${escapeHTML(item.price)}
-          </strong>
-
-        </div>
-
-      </a>
-    `;
-
-    container.appendChild(card);
-  });
-}
-
-
-// =====================================================
-// MAP
-// =====================================================
-
-const mapData = [
-  {
-    title: "The Hunt: Roblox 20",
-    description:
-      "Hub resmi untuk merayakan 20 tahun Roblox dan menjelajahi berbagai era Roblox.",
-    link:
-      "https://www.roblox.com/games/74205509034203/The-Hunt-Roblox-20",
-    universeId: "74205509034203",
-    category: "EVENT"
-  },
-
-  {
-    title: "Jailbreak",
-    description:
-      "Kejar-kejaran polisi dan kriminal yang menjadi salah satu game klasik Roblox.",
-    link:
-      "https://www.roblox.com/games/606849621/Jailbreak",
-    universeId: "606849621",
-    category: "CLASSIC"
-  },
-
-  {
-    title: "Adopt Me!",
-    description:
-      "Roleplay, rumah, trading, dan koleksi pet dalam dunia Roblox.",
-    link:
-      "https://www.roblox.com/games/920587237/Adopt-Me",
-    universeId: "920587237",
-    category: "ROLEPLAY"
-  },
-
-  {
-    title: "Grow a Garden",
-    description:
-      "Game berkebun Roblox yang menjadi salah satu tren terbesar di platform.",
-    link:
-      "https://www.roblox.com/games/126884695634066/Grow-a-Garden",
-    universeId: "126884695634066",
-    category: "TRENDING"
   }
-];
 
+}
+
+
+// ============================================================
+// RENDER MAP
+// ============================================================
 
 function renderMaps() {
+
   const container =
     document.querySelector("#mapsGrid") ||
     document.querySelector(".maps-grid") ||
@@ -433,12 +362,15 @@ function renderMaps() {
 
   container.innerHTML = "";
 
-  mapData.forEach((map) => {
-    const card = document.createElement("article");
+  FANDIRA.maps.forEach((map) => {
+
+    const card =
+      document.createElement("article");
 
     card.className = "map-card";
 
     card.innerHTML = `
+
       <a
         href="${map.link}"
         target="_blank"
@@ -450,8 +382,8 @@ function renderMaps() {
           <img
             src=""
             alt="${escapeHTML(map.title)}"
-            loading="lazy"
             data-universe-id="${map.universeId}"
+            loading="lazy"
           >
 
           <span class="map-badge">
@@ -471,28 +403,175 @@ function renderMaps() {
           </p>
 
           <span>
-            Buka Game →
+            Buka Map →
           </span>
 
         </div>
 
       </a>
+
     `;
 
     container.appendChild(card);
 
-    const img = card.querySelector("img");
-
-    loadGameThumbnail(img);
   });
+
+  loadThumbnails(container);
+
 }
 
 
-// =====================================================
-// NEWS
-// =====================================================
+// ============================================================
+// RENDER EXPERIENCE
+// ============================================================
+
+function renderExperiences() {
+
+  const container =
+    document.querySelector("#gamesGrid") ||
+    document.querySelector(".games-grid") ||
+    document.querySelector("#games .grid");
+
+  if (!container) return;
+
+  container.innerHTML = "";
+
+  FANDIRA.experiences.forEach((game) => {
+
+    const card =
+      document.createElement("article");
+
+    card.className = "game-card";
+
+    card.innerHTML = `
+
+      <a
+        href="${game.link}"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+
+        <div class="game-image">
+
+          <img
+            src=""
+            alt="${escapeHTML(game.title)}"
+            data-universe-id="${game.universeId}"
+            loading="lazy"
+          >
+
+          <span class="game-badge">
+            ${escapeHTML(game.category)}
+          </span>
+
+        </div>
+
+        <div class="game-content">
+
+          <h3>
+            ${escapeHTML(game.title)}
+          </h3>
+
+          <p>
+            ${escapeHTML(game.description)}
+          </p>
+
+          <span class="game-button">
+            Mainkan di Roblox →
+          </span>
+
+        </div>
+
+      </a>
+
+    `;
+
+    container.appendChild(card);
+
+  });
+
+  loadThumbnails(container);
+
+}
+
+
+// ============================================================
+// RENDER UGC
+// ============================================================
+
+function renderUGC() {
+
+  const container =
+    document.querySelector("#ugcGrid") ||
+    document.querySelector(".ugc-grid") ||
+    document.querySelector("#ugc .grid");
+
+  if (!container) return;
+
+  container.innerHTML = "";
+
+  FANDIRA.ugc.forEach((item) => {
+
+    const card =
+      document.createElement("article");
+
+    card.className = "ugc-card";
+
+    card.innerHTML = `
+
+      <a
+        href="${item.link}"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+
+        <div class="ugc-image">
+
+          <img
+            src="${item.image}"
+            alt="${escapeHTML(item.title)}"
+            loading="lazy"
+          >
+
+          <span class="ugc-status">
+            ${escapeHTML(item.status)}
+          </span>
+
+        </div>
+
+        <div class="ugc-content">
+
+          <h3>
+            ${escapeHTML(item.title)}
+          </h3>
+
+          <p>
+            ${escapeHTML(item.creator)}
+          </p>
+
+          <strong>
+            ${escapeHTML(item.type)}
+          </strong>
+
+        </div>
+
+      </a>
+
+    `;
+
+    container.appendChild(card);
+
+  });
+
+}
+
+
+// ============================================================
+// RENDER NEWS
+// ============================================================
 
 function renderNews() {
+
   const container =
     document.querySelector("#newsGrid") ||
     document.querySelector(".news-grid") ||
@@ -502,12 +581,15 @@ function renderNews() {
 
   container.innerHTML = "";
 
-  newsData.forEach((news) => {
-    const card = document.createElement("article");
+  FANDIRA.news.forEach((news) => {
+
+    const card =
+      document.createElement("article");
 
     card.className = "news-card";
 
     card.innerHTML = `
+
       <a
         href="${news.link}"
         target="_blank"
@@ -545,25 +627,163 @@ function renderNews() {
         </div>
 
       </a>
+
     `;
 
     container.appendChild(card);
+
   });
+
 }
 
 
-// =====================================================
-// START
-// =====================================================
+// ============================================================
+// RENDER CREATOR
+// ============================================================
 
-document.addEventListener("DOMContentLoaded", () => {
+function renderCreator() {
 
-  renderUGC();
+  const container =
+    document.querySelector("#creatorGrid") ||
+    document.querySelector(".creator-grid") ||
+    document.querySelector("#creator .grid");
 
-  renderMaps();
+  if (!container) return;
 
-  renderGames();
+  container.innerHTML = "";
 
-  renderNews();
+  FANDIRA.creator.forEach((item) => {
 
-});
+    const card =
+      document.createElement("article");
+
+    card.className = "creator-card";
+
+    card.innerHTML = `
+
+      <a
+        href="${item.link}"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+
+        <div class="creator-image">
+
+          <img
+            src="${item.image}"
+            alt="${escapeHTML(item.title)}"
+            loading="lazy"
+          >
+
+          <span>
+            ${escapeHTML(item.category)}
+          </span>
+
+        </div>
+
+        <div class="creator-content">
+
+          <h3>
+            ${escapeHTML(item.title)}
+          </h3>
+
+          <p>
+            ${escapeHTML(item.description)}
+          </p>
+
+          <strong>
+            Buka Creator Hub →
+          </strong>
+
+        </div>
+
+      </a>
+
+    `;
+
+    container.appendChild(card);
+
+  });
+
+}
+
+
+// ============================================================
+// RENDER TRENDING
+// ============================================================
+
+function renderTrending() {
+
+  const container =
+    document.querySelector("#trendingGrid") ||
+    document.querySelector(".trending-grid") ||
+    document.querySelector("#trending .grid");
+
+  if (!container) return;
+
+  container.innerHTML = "";
+
+  FANDIRA.trending.forEach((item) => {
+
+    const card =
+      document.createElement("article");
+
+    card.className = "trending-card";
+
+    card.innerHTML = `
+
+      <a
+        href="${item.link}"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+
+        <span class="trending-rank">
+          #${item.rank}
+        </span>
+
+        <div>
+
+          <h3>
+            ${escapeHTML(item.title)}
+          </h3>
+
+          <p>
+            ${escapeHTML(item.type)}
+          </p>
+
+        </div>
+
+      </a>
+
+    `;
+
+    container.appendChild(card);
+
+  });
+
+}
+
+
+// ============================================================
+// START FANDIRA
+// ============================================================
+
+document.addEventListener(
+  "DOMContentLoaded",
+  () => {
+
+    renderUGC();
+
+    renderMaps();
+
+    renderExperiences();
+
+    renderNews();
+
+    renderCreator();
+
+    renderTrending();
+
+  }
+);
