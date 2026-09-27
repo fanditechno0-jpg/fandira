@@ -1,489 +1,493 @@
-/* =========================================================
-   FANDIRA
-   ROBLOX AUTO CONTENT
-========================================================= */
-
 document.addEventListener("DOMContentLoaded", () => {
-
-    loadLatestUGC();
-
-});
-
-
-/* =========================================================
-   ROBLOX MARKETPLACE
-   UGC TERKINI
-========================================================= */
-
-async function loadLatestUGC() {
-
-    const ugcGrid = document.querySelector(".ugc-grid");
-
-    if (!ugcGrid) {
-        return;
-    }
+    console.log("Fandira Portal aktif");
 
     /*
-        Roblox Marketplace API
-
-        Category:
-        11 = Accessories
-
-        SortType:
-        3 = Updated
-
-        SortAggregation:
-        1 = PastDay
-
-        Limit:
-        10
+    ============================================
+    FANDIRA — ROBLOX PORTAL
+    TAHAP 1
+    ============================================
     */
 
-    const apiURL =
-        "https://catalog.roblox.com/v1/search/items/details" +
-        "?Category=11" +
-        "&Subcategory=19" +
-        "&SortType=3" +
-        "&SortAggregation=1" +
-        "&Limit=10";
+    // ==========================================
+    // DATA UGC / EVENT
+    // ==========================================
 
-
-    try {
-
-        showUGCLoading(ugcGrid);
-
-
-        const response = await fetch(apiURL);
-
-
-        if (!response.ok) {
-
-            throw new Error(
-                "Roblox API error: " +
-                response.status
-            );
-
+    const ugcData = [
+        {
+            title: "The Hunt: Roblox 20",
+            category: "ROBLOX 20",
+            tag: "🔥 VIRAL",
+            description:
+                "Event 20 tahun Roblox dengan quest dari berbagai era Roblox dan hadiah UGC yang bisa dikumpulkan.",
+            link:
+                "https://www.roblox.com/games/74205509034203/The-Hunt-Roblox-20"
+        },
+        {
+            title: "UGC The Hunt Roblox 20",
+            category: "EVENT UGC",
+            tag: "🎁 REWARD",
+            description:
+                "Berbagai hadiah avatar dan UGC tersedia melalui quest The Hunt: Roblox 20.",
+            link:
+                "https://www.roblox.com/games/74205509034203/The-Hunt-Roblox-20"
+        },
+        {
+            title: "Roblox 20th Anniversary",
+            category: "ANNIVERSARY",
+            tag: "🆕 EVENT",
+            description:
+                "Perayaan 20 tahun Roblox membawa pemain menjelajahi sejarah Roblox dari tahun 2006 hingga sekarang.",
+            link:
+                "https://www.roblox.com/games/74205509034203/The-Hunt-Roblox-20"
+        },
+        {
+            title: "Explore Roblox Marketplace",
+            category: "MARKETPLACE",
+            tag: "🔥 TRENDING",
+            description:
+                "Jelajahi berbagai aksesori dan avatar item terbaru di Roblox Marketplace.",
+            link:
+                "https://www.roblox.com/catalog"
         }
+    ];
 
 
-        const result = await response.json();
+    // ==========================================
+    // MAP / GAME PILIHAN
+    // ==========================================
 
+    const mapData = [
+        {
+            title: "The Hunt: Roblox 20",
+            category: "EVENT",
+            tag: "🔥 EVENT",
+            description:
+                "Hub event 20 tahun Roblox yang membawa pemain melewati game-game dari sejarah Roblox.",
+            link:
+                "https://www.roblox.com/games/74205509034203/The-Hunt-Roblox-20"
+        },
 
-        if (
-            !result ||
-            !Array.isArray(result.data) ||
-            result.data.length === 0
-        ) {
+        {
+            title: "Jailbreak",
+            category: "ACTION",
+            tag: "🚓 ACTION",
+            description:
+                "Game open-world polisi dan kriminal yang menjadi bagian dari perjalanan The Hunt: Roblox 20.",
+            link:
+                "https://www.roblox.com/games/606849621/Jailbreak"
+        },
 
-            throw new Error(
-                "Tidak ada UGC yang ditemukan."
-            );
+        {
+            title: "Adopt Me!",
+            category: "ROLEPLAY",
+            tag: "🐾 ROLEPLAY",
+            description:
+                "Game roleplay populer dengan pet, rumah dan dunia sosial yang luas.",
+            link:
+                "https://www.roblox.com/games/920587237/Adopt-Me"
+        },
 
+        {
+            title: "Grow a Garden",
+            category: "SIMULATOR",
+            tag: "🌱 SIMULATOR",
+            description:
+                "Game berkebun dan simulator yang juga menjadi salah satu game dalam perjalanan The Hunt.",
+            link:
+                "https://www.roblox.com/games/126884695634066/Grow-a-Garden"
         }
+    ];
 
 
-        const items =
-            result.data.slice(0, 4);
+    // ==========================================
+    // GAME TERKINI
+    // ==========================================
+
+    const gameData = [
+        {
+            title: "RIVALS",
+            category: "FPS",
+            description:
+                "FPS kompetitif Roblox dengan pertarungan 1v1 hingga 5v5.",
+            link:
+                "https://www.roblox.com/discover/?Keyword=RIVALS"
+        },
+
+        {
+            title: "DOORS",
+            category: "HORROR",
+            description:
+                "Game horror Roblox yang mengandalkan eksplorasi, audio dan berbagai ancaman.",
+            link:
+                "https://www.roblox.com/games/6516141723/DOORS"
+        },
+
+        {
+            title: "99 Nights in the Forest",
+            category: "SURVIVAL",
+            description:
+                "Bertahan hidup di hutan, membangun camp dan mencari anak-anak yang hilang.",
+            link:
+                "https://www.roblox.com/discover/?Keyword=99%20Nights%20in%20the%20Forest"
+        },
+
+        {
+            title: "Animal Hospital",
+            category: "NEW GAME",
+            description:
+                "Pengalaman rumah sakit hewan dengan suasana misterius dan anomali.",
+            link:
+                "https://www.roblox.com/discover/?Keyword=Animal%20Hospital"
+        },
+
+        {
+            title: "FIFA Super Soccer",
+            category: "SPORT",
+            description:
+                "Game sepak bola Roblox dengan pertandingan dan kompetisi multiplayer.",
+            link:
+                "https://www.roblox.com/discover/?Keyword=FIFA%20Super%20Soccer"
+        },
+
+        {
+            title: "Jujutsu Shenanigans",
+            category: "ACTION",
+            description:
+                "Game action dengan pertarungan cepat dan berbagai kemampuan.",
+            link:
+                "https://www.roblox.com/discover/?Keyword=Jujutsu%20Shenanigans"
+        }
+    ];
 
 
-        const thumbnails =
-            await getUGCThumbnails(items);
+    // ==========================================
+    // BERITA ROBLOX
+    // ==========================================
+
+    const newsData = [
+        {
+            title: "The Hunt: Roblox 20 Resmi Dimulai",
+            category: "ROBLOX OFFICIAL",
+            date: "16 September 2026",
+            description:
+                "Roblox merayakan ulang tahun ke-20 dengan event lintas platform yang membawa pemain melewati sejarah Roblox selama dua dekade dan memberikan hadiah UGC sepanjang perjalanan.",
+            source: "Roblox News",
+            link:
+                "https://about.roblox.com/id/newsroom/2026/09/join-the-hunt-roblox-20"
+        },
+
+        {
+            title: "Roblox Innovation Awards 2026",
+            category: "CREATOR",
+            date: "12 September 2026",
+            description:
+                "Roblox mengumumkan penghargaan untuk game, creator dan studio yang menonjol pada tahun 2026, termasuk RIVALS, DOORS, 99 Nights in the Forest dan Animal Hospital.",
+            source: "Roblox News",
+            link:
+                "https://about.roblox.com/id/newsroom/2026/09/2026-roblox-innovation-awards"
+        },
+
+        {
+            title: "RDC 2026: Roblox Memasuki Era Baru",
+            category: "ROBLOX UPDATE",
+            date: "11 September 2026",
+            description:
+                "Roblox membahas perkembangan platform, fitur baru untuk pemain, creator dan berbagai teknologi baru yang sedang dikembangkan.",
+            source: "Roblox News",
+            link:
+                "https://about.roblox.com/newsroom/2026/09/rdc-2026-the-world-needs-more-play"
+        },
+
+        {
+            title: "Panduan UGC The Hunt: Roblox 20",
+            category: "GUIDE",
+            date: "September 2026",
+            description:
+                "Panduan komunitas untuk mendapatkan berbagai badge dan hadiah UGC dari quest The Hunt: Roblox 20.",
+            source: "Games.gg",
+            link:
+                "https://games.gg/roblox/guides/the-hunt-roblox-20-how-to-get-roblox-high-school-badge-and-ugc/"
+        }
+    ];
 
 
-        renderUGC(
-            ugcGrid,
-            items,
-            thumbnails
-        );
+    // ==========================================
+    // RENDER HELPER
+    // ==========================================
 
-
-    } catch (error) {
-
-        console.error(
-            "FANDIRA UGC ERROR:",
-            error
-        );
-
-
-        showUGCError(
-            ugcGrid
-        );
-
+    function escapeHTML(text) {
+        return String(text)
+            .replaceAll("&", "&amp;")
+            .replaceAll("<", "&lt;")
+            .replaceAll(">", "&gt;")
+            .replaceAll('"', "&quot;")
+            .replaceAll("'", "&#039;");
     }
 
-}
 
+    // ==========================================
+    // UGC
+    // ==========================================
 
-/* =========================================================
-   THUMBNAIL ROBLOX
-========================================================= */
+    function renderUGC() {
 
-async function getUGCThumbnails(items) {
+        const container =
+            document.querySelector(".ugc-grid");
 
-    const ids =
-        items
-            .map(item => item.id)
-            .join(",");
+        if (!container) return;
 
+        container.innerHTML = "";
 
-    const url =
-        "https://thumbnails.roblox.com/v1/assets" +
-        "?assetIds=" +
-        ids +
-        "&returnPolicy=PlaceHolder" +
-        "&size=420x420" +
-        "&format=Png" +
-        "&isCircular=false";
-
-
-    try {
-
-        const response =
-            await fetch(url);
-
-
-        if (!response.ok) {
-
-            throw new Error(
-                "Thumbnail API error"
-            );
-
-        }
-
-
-        const result =
-            await response.json();
-
-
-        return result.data || [];
-
-
-    } catch (error) {
-
-        console.error(
-            "FANDIRA THUMBNAIL ERROR:",
-            error
-        );
-
-
-        return [];
-
-    }
-
-}
-
-
-/* =========================================================
-   RENDER UGC
-========================================================= */
-
-function renderUGC(
-    container,
-    items,
-    thumbnails
-) {
-
-    container.innerHTML = "";
-
-
-    items.forEach(
-        (item, index) => {
-
-            const thumbnail =
-                thumbnails.find(
-                    thumb =>
-                        thumb.targetId === item.id
-                );
-
-
-            const image =
-                thumbnail &&
-                thumbnail.imageUrl
-                    ? thumbnail.imageUrl
-                    : "";
-
+        ugcData.forEach((item) => {
 
             const card =
-                document.createElement("a");
+                document.createElement("article");
 
-
-            card.className =
-                "ugc-card";
-
-
-            card.href =
-                "https://www.roblox.com/catalog/" +
-                item.id;
-
-
-            card.target =
-                "_blank";
-
-
-            card.rel =
-                "noopener noreferrer";
-
-
-            const imageClass =
-                [
-                    "ugc-purple",
-                    "ugc-blue",
-                    "ugc-pink",
-                    "ugc-green"
-                ][index] ||
-                "ugc-purple";
-
+            card.className = "content-card";
 
             card.innerHTML = `
+                <div class="card-image ugc-placeholder">
 
-                <div class="ugc-image ${imageClass}">
-
-                    ${
-                        image
-                        ?
-                        `
-                        <img
-                            src="${image}"
-                            alt="${escapeHTML(item.name)}"
-                            loading="lazy"
-                            class="ugc-real-image"
-                        >
-                        `
-                        :
-                        `
-                        <div class="ugc-placeholder">
-                            UGC
-                        </div>
-                        `
-                    }
-
-                    <span class="ugc-label">
-                        TERBARU
-                    </span>
-
-                </div>
-
-
-                <div class="ugc-info">
-
-                    <div>
-
-                        <h3>
-                            ${escapeHTML(item.name)}
-                        </h3>
-
-                        <p>
-                            ${
-                                item.creatorName
-                                ?
-                                escapeHTML(
-                                    item.creatorName
-                                )
-                                :
-                                "Roblox Creator"
-                            }
-                            ·
-                            ${
-                                formatRobux(
-                                    item.price
-                                )
-                            }
-                        </p>
-
+                    <div class="placeholder-icon">
+                        ✨
                     </div>
 
-                    <span class="ugc-arrow">
-                        ↗
+                    <span class="tag">
+                        ${escapeHTML(item.tag)}
                     </span>
 
                 </div>
 
-            `;
+                <div class="card-body">
 
-
-            container.appendChild(
-                card
-            );
-
-        }
-    );
-
-}
-
-
-/* =========================================================
-   LOADING
-========================================================= */
-
-function showUGCLoading(container) {
-
-    container.innerHTML = "";
-
-
-    for (
-        let i = 0;
-        i < 4;
-        i++
-    ) {
-
-        const loading =
-            document.createElement("div");
-
-
-        loading.className =
-            "ugc-card ugc-loading-card";
-
-
-        loading.innerHTML = `
-
-            <div class="ugc-image">
-
-                <div class="ugc-loading">
-                    MEMUAT...
-                </div>
-
-            </div>
-
-
-            <div class="ugc-info">
-
-                <div>
+                    <span class="category">
+                        ${escapeHTML(item.category)}
+                    </span>
 
                     <h3>
-                        Mengambil UGC...
+                        ${escapeHTML(item.title)}
                     </h3>
 
                     <p>
-                        Roblox Marketplace
+                        ${escapeHTML(item.description)}
                     </p>
+
+                    <div class="card-meta">
+                        <span>
+                            ROBLOX
+                        </span>
+                    </div>
+
+                    <a
+                        href="${item.link}"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="card-button"
+                    >
+                        LIHAT DI ROBLOX →
+                    </a>
+
+                </div>
+            `;
+
+            container.appendChild(card);
+        });
+    }
+
+
+    // ==========================================
+    // MAP
+    // ==========================================
+
+    function renderMaps() {
+
+        const container =
+            document.querySelector(".map-grid");
+
+        if (!container) return;
+
+        container.innerHTML = "";
+
+        mapData.forEach((item) => {
+
+            const card =
+                document.createElement("article");
+
+            card.className = "content-card";
+
+            card.innerHTML = `
+                <div class="card-image map-placeholder">
+
+                    <div class="placeholder-icon">
+                        🎮
+                    </div>
+
+                    <span class="tag">
+                        ${escapeHTML(item.tag)}
+                    </span>
 
                 </div>
 
-            </div>
+                <div class="card-body">
 
-        `;
+                    <span class="category">
+                        ${escapeHTML(item.category)}
+                    </span>
 
+                    <h3>
+                        ${escapeHTML(item.title)}
+                    </h3>
 
-        container.appendChild(
-            loading
-        );
+                    <p>
+                        ${escapeHTML(item.description)}
+                    </p>
 
-    }
+                    <a
+                        href="${item.link}"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="card-button"
+                    >
+                        MAIN DI ROBLOX →
+                    </a>
 
-}
+                </div>
+            `;
 
-
-/* =========================================================
-   ERROR
-========================================================= */
-
-function showUGCError(container) {
-
-    container.innerHTML = `
-
-        <div
-            style="
-                grid-column:1/-1;
-                padding:35px;
-                text-align:center;
-                border:1px solid rgba(255,255,255,.08);
-                border-radius:22px;
-                background:rgba(255,255,255,.025);
-            "
-        >
-
-            <strong>
-                UGC sedang tidak dapat dimuat.
-            </strong>
-
-            <p
-                style="
-                    color:#9ba1b5;
-                    margin-top:8px;
-                    font-size:13px;
-                "
-            >
-                Coba refresh halaman beberapa saat lagi.
-            </p>
-
-        </div>
-
-    `;
-
-}
-
-
-/* =========================================================
-   ROBUX FORMAT
-========================================================= */
-
-function formatRobux(price) {
-
-    if (
-        price === null ||
-        price === undefined
-    ) {
-
-        return "Harga tidak tersedia";
-
+            container.appendChild(card);
+        });
     }
 
 
-    if (
-        typeof price !== "number"
-    ) {
+    // ==========================================
+    // GAME
+    // ==========================================
 
-        return "Harga tidak tersedia";
+    function renderGames() {
 
+        const container =
+            document.querySelector(".feature-list");
+
+        if (!container) return;
+
+        container.innerHTML = "";
+
+        gameData.forEach((game, index) => {
+
+            const card =
+                document.createElement("article");
+
+            card.className = "feature-card";
+
+            card.innerHTML = `
+                <div class="feature-number">
+                    ${String(index + 1).padStart(2, "0")}
+                </div>
+
+                <div>
+
+                    <span class="category">
+                        ${escapeHTML(game.category)}
+                    </span>
+
+                    <h3>
+                        ${escapeHTML(game.title)}
+                    </h3>
+
+                    <p>
+                        ${escapeHTML(game.description)}
+                    </p>
+
+                    <a
+                        href="${game.link}"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Main di Roblox →
+                    </a>
+
+                </div>
+            `;
+
+            container.appendChild(card);
+        });
     }
 
 
-    return (
-        Number(price)
-            .toLocaleString("id-ID")
-        +
-        " R$"
-    );
+    // ==========================================
+    // NEWS
+    // ==========================================
 
-}
+    function renderNews() {
 
+        const container =
+            document.querySelector(".news-grid");
 
-/* =========================================================
-   SECURITY
-========================================================= */
+        if (!container) return;
 
-function escapeHTML(value) {
+        container.innerHTML = "";
 
-    if (
-        value === null ||
-        value === undefined
-    ) {
+        newsData.forEach((news) => {
 
-        return "";
+            const card =
+                document.createElement("article");
 
+            card.className = "news-card";
+
+            card.innerHTML = `
+
+                <div class="news-image news-placeholder">
+
+                    <div class="placeholder-icon">
+                        📰
+                    </div>
+
+                </div>
+
+                <div class="news-body">
+
+                    <span class="category">
+                        ${escapeHTML(news.category)}
+                    </span>
+
+                    <h3>
+                        ${escapeHTML(news.title)}
+                    </h3>
+
+                    <p>
+                        ${escapeHTML(news.description)}
+                    </p>
+
+                    <div class="news-meta">
+                        ${escapeHTML(news.source)}
+                        ·
+                        ${escapeHTML(news.date)}
+                    </div>
+
+                    <a
+                        href="${news.link}"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="card-button"
+                    >
+                        BACA ARTIKEL →
+                    </a>
+
+                </div>
+            `;
+
+            container.appendChild(card);
+        });
     }
 
 
-    return String(value)
-        .replace(
-            /&/g,
-            "&amp;"
-        )
-        .replace(
-            /</g,
-            "&lt;"
-        )
-        .replace(
-            />/g,
-            "&gt;"
-        )
-        .replace(
-            /"/g,
-            "&quot;"
-        )
-        .replace(
-            /'/g,
-            "&#039;"
-        );
+    // ==========================================
+    // START
+    // ==========================================
 
-}
+    renderUGC();
+    renderMaps();
+    renderGames();
+    renderNews();
+
+});
