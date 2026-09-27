@@ -1,813 +1,1130 @@
 "use strict";
 
-/* =====================================================
+/* =========================================================
    FANDIRA
-   Roblox Portal
-   ===================================================== */
+   Roblox Portal Data
+   HTML & CSS TIDAK PERLU DIUBAH
+   ========================================================= */
+
+
+/* =========================================================
+   DATA UTAMA
+   ========================================================= */
 
 const FANDIRA = {
 
-    /* =================================================
+    /* =====================================================
        UGC
-    ================================================= */
+       TETAP TERPISAH DARI MAP
+       ===================================================== */
 
     ugc: [
         {
             title: "Roblox Marketplace",
-            description:
-                "Temukan avatar item, accessory, pakaian dan UGC terbaru langsung dari Marketplace Roblox.",
-            creator: "Roblox Marketplace",
+            creator: "Roblox",
             price: "Marketplace",
-            status: "TERKINI",
-            image:
-                "https://tr.rbxcdn.com/180DAY-9c4d6c5e6f4e8f9d3f3e4d4d5d8c5d7b/420/420/Image/Png/noFilter",
-            url:
-                "https://www.roblox.com/catalog"
+            tag: "UGC",
+            image: "",
+            url: "https://www.roblox.com/catalog"
         },
         {
             title: "The Hunt: Roblox 20",
-            description:
-                "Event Roblox 20 dengan berbagai pengalaman, quest dan item eksklusif.",
-            creator: "Roblox Presents",
-            price: "EVENT",
-            status: "TERKINI",
-            image:
-                "https://tr.rbxcdn.com/180DAY-8c3f6e2f5c2c0f2b5e6a2d6e8c3f1b8d/420/420/Image/Png/noFilter",
-            url:
-                "https://www.roblox.com/games/74205509034203"
+            creator: "Roblox",
+            price: "Event UGC",
+            tag: "EVENT",
+            image: "",
+            url: "https://www.roblox.com/games/74205509034203"
+        },
+        {
+            title: "Avatar Shop",
+            creator: "Roblox",
+            price: "UGC",
+            tag: "SHOP",
+            image: "",
+            url: "https://www.roblox.com/catalog"
+        },
+        {
+            title: "Limited Items",
+            creator: "Roblox Marketplace",
+            price: "Limited",
+            tag: "LIMITED",
+            image: "",
+            url: "https://www.roblox.com/catalog?Category=1&Subcategory=2"
+        },
+        {
+            title: "Accessories",
+            creator: "Roblox Marketplace",
+            price: "UGC",
+            tag: "ACCESSORY",
+            image: "",
+            url: "https://www.roblox.com/catalog?Category=11"
+        },
+        {
+            title: "Heads",
+            creator: "Roblox Marketplace",
+            price: "UGC",
+            tag: "HEAD",
+            image: "",
+            url: "https://www.roblox.com/catalog?Category=4"
         }
     ],
 
 
-    /* =================================================
-       MAP
-       TOP 10 VIRAL + KATEGORI MAP
-       ================================================= */
+    /* =====================================================
+       MAP ROBLOX
+       
+       SATU MAP = SATU DATA
+       CATEGORY = tempat map tersebut muncul.
+       
+       SETIAP FILTER AKAN MENGAMBIL 10 MAP.
+       ===================================================== */
 
     maps: [
 
         /* =================================================
-           🔥 TOP 10 VIRAL
-        ================================================= */
-
-        {
-            title: "NUNGGUAN | Broken Silence",
-            description:
-                "Horror adventure Indonesia dengan suasana gelap, misteri dan berbagai kejadian mengejutkan.",
-            placeId: 125847422162067,
-            category: ["viral", "popular", "horror"],
-            tag: "TOP 1 VIRAL",
-            url:
-                "https://www.roblox.com/games/125847422162067/NUNGGUAN-Broken-Silence"
-        },
+           1. VIRAL — 10
+           ================================================= */
 
         {
             title: "Gunung Kambuno",
-            description:
-                "Map pendakian Gunung Kambuno dengan hutan, danau, air terjun dan jalur pendakian.",
+            description: "Map pendakian Indonesia dengan hutan, danau, air terjun dan jalur eksplorasi.",
             placeId: 90996930447931,
-            category: ["viral", "popular", "realistic", "openworld"],
-            tag: "TOP 2 VIRAL",
-            url:
-                "https://www.roblox.com/games/90996930447931/Gunung-Kambuno"
+            category: ["viral", "popular", "rating", "realistic", "openworld"],
+            tag: "VIRAL #1",
+            url: "https://www.roblox.com/games/90996930447931/Gunung-Kambuno"
+        },
+
+        {
+            title: "NUNGGUAN | Broken Silence",
+            description: "Psychological horror story dengan misteri, suasana gelap dan kejutan.",
+            placeId: 125847422162067,
+            category: ["viral", "popular", "rating", "horror"],
+            tag: "VIRAL #2",
+            url: "https://www.roblox.com/games/125847422162067/NUNGGUAN-Broken-Silence"
         },
 
         {
             title: "MOUNT TRANGGULASIH",
-            description:
-                "Map pendakian dengan savannah, cinematic mode, free cam dan berbagai fitur eksplorasi.",
+            description: "Map pendakian dengan savannah, cinematic mode dan eksplorasi alam.",
             placeId: 74052392386319,
-            category: ["viral", "popular", "realistic", "openworld", "party"],
-            tag: "TOP 3 VIRAL",
-            url:
-                "https://www.roblox.com/games/74052392386319/MOUNT-TRANGGULASIH"
-        },
-
-        {
-            title: "MOUNT RINJANI",
-            description:
-                "Rekreasi Gunung Rinjani dengan hutan berkabut, medan terjal dan kawasan Segara Anak.",
-            placeId: 138149789228609,
-            category: ["viral", "popular", "realistic", "openworld"],
-            tag: "TOP 4 VIRAL",
-            url:
-                "https://www.roblox.com/games/138149789228609/MOUNT-RINJANI"
-        },
-
-        {
-            title: "KERAMAT Dusun Pocong",
-            description:
-                "Horror Indonesia dengan desa terpencil, pemakaman keramat dan kejadian mistis.",
-            placeId: 138879663836413,
-            category: ["viral", "horror"],
-            tag: "TOP 5 VIRAL",
-            url:
-                "https://www.roblox.com/games/138879663836413/KERAMAT-Dusun-Pocong"
+            category: ["viral", "popular", "rating", "realistic", "openworld"],
+            tag: "VIRAL #3",
+            url: "https://www.roblox.com/games/74052392386319/MOUNT-TRANGGULASIH"
         },
 
         {
             title: "MOUNT SIJJIN",
-            description:
-                "Pendakian mistis dengan jumpscare, suara keras dan kejadian supernatural.",
+            description: "Pendakian bernuansa mistis dengan jumpscare dan kejadian supernatural.",
             placeId: 116761724761682,
             category: ["viral", "horror", "new"],
-            tag: "TOP 6 VIRAL",
-            url:
-                "https://www.roblox.com/games/116761724761682/MOUNT-SIJJIN"
-        },
-
-        {
-            title: "Mount Merbabu",
-            description:
-                "Pendakian Gunung Merbabu dengan savannah, hutan pinus dan panorama Jawa Tengah.",
-            placeId: 114440555601511,
-            category: ["viral", "popular", "realistic", "openworld", "new"],
-            tag: "TOP 7 VIRAL",
-            url:
-                "https://www.roblox.com/games/114440555601511/MOUNT-MERBABU"
-        },
-
-        {
-            title: "Mount Sumbing",
-            description:
-                "Map pendakian realistis dengan pegunungan, cuaca dan berbagai area eksplorasi.",
-            placeId: 118392527498403,
-            category: ["viral", "realistic", "openworld", "new"],
-            tag: "TOP 8 VIRAL",
-            url:
-                "https://www.roblox.com/games/118392527498403/Mount-Sumbing"
-        },
-
-        {
-            title: "Mount Ijen",
-            description:
-                "Eksplorasi Kawah Ijen dengan hutan tropis, kawah dan fenomena Blue Fire.",
-            placeId: 91278022984469,
-            category: ["viral", "realistic", "openworld"],
-            tag: "TOP 9 VIRAL",
-            url:
-                "https://www.roblox.com/games/91278022984469"
-        },
-
-        {
-            title: "Ekspedisi Gunung Rinjani",
-            description:
-                "Ekspedisi Rinjani dengan checkpoint, spot foto, dance, sepeda dan ATV.",
-            placeId: 95656495100644,
-            category: ["viral", "popular", "party", "realistic", "new"],
-            tag: "TOP 10 VIRAL",
-            url:
-                "https://www.roblox.com/games/95656495100644/Ekspedisi-Gunung-Rinjani"
-        },
-
-
-        /* =================================================
-           👥 PALING RAMAI
-        ================================================= */
-
-        {
-            title: "NUNGGUAN | Broken Silence",
-            description:
-                "Horror adventure Indonesia dengan jutaan kunjungan.",
-            placeId: 125847422162067,
-            category: ["popular", "viral", "horror"],
-            tag: "RAMAI",
-            url:
-                "https://www.roblox.com/games/125847422162067/NUNGGUAN-Broken-Silence"
-        },
-
-        {
-            title: "Gunung Kambuno",
-            description:
-                "Pendakian Gunung Kambuno dengan lebih dari satu juta kunjungan.",
-            placeId: 90996930447931,
-            category: ["popular", "viral", "realistic"],
-            tag: "RAMAI",
-            url:
-                "https://www.roblox.com/games/90996930447931/Gunung-Kambuno"
-        },
-
-        {
-            title: "MOUNT RINJANI",
-            description:
-                "Eksplorasi Gunung Rinjani dengan hutan dan Segara Anak.",
-            placeId: 138149789228609,
-            category: ["popular", "viral", "realistic"],
-            tag: "RAMAI",
-            url:
-                "https://www.roblox.com/games/138149789228609/MOUNT-RINJANI"
-        },
-
-        {
-            title: "MOUNT TRANGGULASIH",
-            description:
-                "Pendakian gunung dengan savannah dan cinematic mode.",
-            placeId: 74052392386319,
-            category: ["popular", "viral", "realistic"],
-            tag: "RAMAI",
-            url:
-                "https://www.roblox.com/games/74052392386319/MOUNT-TRANGGULASIH"
-        },
-
-        {
-            title: "Mount Merbabu",
-            description:
-                "Map pendakian dengan savannah dan hutan pinus.",
-            placeId: 114440555601511,
-            category: ["popular", "viral", "realistic"],
-            tag: "RAMAI",
-            url:
-                "https://www.roblox.com/games/114440555601511/MOUNT-MERBABU"
-        },
-
-
-        /* =================================================
-           ⭐ RATING BAGUS
-        ================================================= */
-
-        {
-            title: "MOUNT TRANGGULASIH",
-            description:
-                "Map gunung dengan cinematic mode, free cam dan savannah.",
-            placeId: 74052392386319,
-            category: ["rating", "realistic", "viral"],
-            tag: "RATING",
-            url:
-                "https://www.roblox.com/games/74052392386319/MOUNT-TRANGGULASIH"
-        },
-
-        {
-            title: "Gunung Kambuno",
-            description:
-                "Map gunung realistis dengan hutan, danau dan air terjun.",
-            placeId: 90996930447931,
-            category: ["rating", "realistic", "popular"],
-            tag: "RATING",
-            url:
-                "https://www.roblox.com/games/90996930447931/Gunung-Kambuno"
-        },
-
-        {
-            title: "MOUNT RINJANI",
-            description:
-                "Rekreasi Gunung Rinjani dengan medan terjal dan Segara Anak.",
-            placeId: 138149789228609,
-            category: ["rating", "realistic", "popular"],
-            tag: "RATING",
-            url:
-                "https://www.roblox.com/games/138149789228609/MOUNT-RINJANI"
-        },
-
-        {
-            title: "Mount Merbabu",
-            description:
-                "Gunung Merbabu dengan savannah dan panorama pegunungan.",
-            placeId: 114440555601511,
-            category: ["rating", "realistic", "new"],
-            tag: "RATING",
-            url:
-                "https://www.roblox.com/games/114440555601511/MOUNT-MERBABU"
-        },
-
-        {
-            title: "Mount Ijen",
-            description:
-                "Eksplorasi Kawah Ijen dengan Blue Fire dan suasana alam.",
-            placeId: 91278022984469,
-            category: ["rating", "realistic", "openworld"],
-            tag: "RATING",
-            url:
-                "https://www.roblox.com/games/91278022984469"
-        },
-
-
-        /* =================================================
-           🌆 REALISTIC
-        ================================================= */
-
-        {
-            title: "MOUNT TRANGGULASIH",
-            description:
-                "Pendakian realistis dengan jalur alam dan savannah.",
-            placeId: 74052392386319,
-            category: ["realistic", "viral", "popular"],
-            tag: "REALISTIC",
-            url:
-                "https://www.roblox.com/games/74052392386319/MOUNT-TRANGGULASIH"
-        },
-
-        {
-            title: "Gunung Kambuno",
-            description:
-                "Gunung dengan hutan, danau, air terjun dan jalur pendakian.",
-            placeId: 90996930447931,
-            category: ["realistic", "popular", "openworld"],
-            tag: "REALISTIC",
-            url:
-                "https://www.roblox.com/games/90996930447931/Gunung-Kambuno"
-        },
-
-        {
-            title: "MOUNT RINJANI",
-            description:
-                "Gunung Rinjani dengan hutan berkabut dan medan terjal.",
-            placeId: 138149789228609,
-            category: ["realistic", "popular", "openworld"],
-            tag: "REALISTIC",
-            url:
-                "https://www.roblox.com/games/138149789228609/MOUNT-RINJANI"
-        },
-
-        {
-            title: "Mount Merbabu",
-            description:
-                "Savannah, hutan pinus dan panorama Gunung Merbabu.",
-            placeId: 114440555601511,
-            category: ["realistic", "new", "openworld"],
-            tag: "REALISTIC",
-            url:
-                "https://www.roblox.com/games/114440555601511/MOUNT-MERBABU"
-        },
-
-        {
-            title: "Mount Ijen",
-            description:
-                "Kawah Ijen dengan hutan tropis dan fenomena Blue Fire.",
-            placeId: 91278022984469,
-            category: ["realistic", "openworld", "viral"],
-            tag: "REALISTIC",
-            url:
-                "https://www.roblox.com/games/91278022984469"
-        },
-
-        {
-            title: "Realistic Drive Simulator Indonesia",
-            description:
-                "Dunia berkendara open-world yang terinspirasi dari berbagai kota Indonesia.",
-            placeId: 10189328024,
-            category: ["realistic", "openworld", "popular"],
-            tag: "REALISTIC",
-            url:
-                "https://www.roblox.com/games/10189328024/Realistic-Drive-Simulator-Indonesia"
-        },
-
-
-        /* =================================================
-           🌍 OPEN WORLD
-        ================================================= */
-
-        {
-            title: "Realistic Drive Simulator Indonesia",
-            description:
-                "Jelajahi kota, berkendara dan melakukan roleplay di dunia open-world.",
-            placeId: 10189328024,
-            category: ["openworld", "realistic", "popular"],
-            tag: "OPEN WORLD",
-            url:
-                "https://www.roblox.com/games/10189328024/Realistic-Drive-Simulator-Indonesia"
-        },
-
-        {
-            title: "Gunung Kambuno",
-            description:
-                "Eksplorasi gunung, hutan, danau dan air terjun.",
-            placeId: 90996930447931,
-            category: ["openworld", "realistic", "popular"],
-            tag: "OPEN WORLD",
-            url:
-                "https://www.roblox.com/games/90996930447931/Gunung-Kambuno"
-        },
-
-        {
-            title: "MOUNT TRANGGULASIH",
-            description:
-                "Jelajahi jalur gunung dan savannah.",
-            placeId: 74052392386319,
-            category: ["openworld", "realistic", "viral"],
-            tag: "OPEN WORLD",
-            url:
-                "https://www.roblox.com/games/74052392386319/MOUNT-TRANGGULASIH"
-        },
-
-        {
-            title: "MOUNT RINJANI",
-            description:
-                "Eksplorasi Rinjani dari hutan hingga kawasan Segara Anak.",
-            placeId: 138149789228609,
-            category: ["openworld", "realistic", "viral"],
-            tag: "OPEN WORLD",
-            url:
-                "https://www.roblox.com/games/138149789228609/MOUNT-RINJANI"
-        },
-
-        {
-            title: "Mount Merbabu",
-            description:
-                "Eksplorasi savannah dan hutan Gunung Merbabu.",
-            placeId: 114440555601511,
-            category: ["openworld", "realistic", "new"],
-            tag: "OPEN WORLD",
-            url:
-                "https://www.roblox.com/games/114440555601511/MOUNT-MERBABU"
-        },
-
-
-        /* =================================================
-           👻 HORROR
-        ================================================= */
-
-        {
-            title: "NUNGGUAN | Broken Silence",
-            description:
-                "Horror adventure Indonesia dengan suasana gelap dan misteri.",
-            placeId: 125847422162067,
-            category: ["horror", "viral", "popular"],
-            tag: "HORROR ID",
-            url:
-                "https://www.roblox.com/games/125847422162067/NUNGGUAN-Broken-Silence"
+            tag: "VIRAL #4",
+            url: "https://www.roblox.com/games/116761724761682/MOUNT-SIJJIN"
         },
 
         {
             title: "KERAMAT Dusun Pocong",
-            description:
-                "Horror Indonesia dengan desa dan pemakaman keramat.",
+            description: "Horror Indonesia dengan desa terpencil, pemakaman dan kejadian mistis.",
             placeId: 138879663836413,
-            category: ["horror", "viral"],
-            tag: "HORROR ID",
-            url:
-                "https://www.roblox.com/games/138879663836413/KERAMAT-Dusun-Pocong"
+            category: ["viral", "horror", "new"],
+            tag: "VIRAL #5",
+            url: "https://www.roblox.com/games/138879663836413/KERAMAT-Dusun-Pocong"
         },
 
         {
-            title: "MOUNT SIJJIN",
-            description:
-                "Pendakian mistis dengan jumpscare dan gangguan supernatural.",
-            placeId: 116761724761682,
-            category: ["horror", "viral", "new"],
-            tag: "HORROR ID",
-            url:
-                "https://www.roblox.com/games/116761724761682/MOUNT-SIJJIN"
+            title: "SHELL PARTY",
+            description: "Social party di gas station dengan musik, dance dan tempat nongkrong.",
+            placeId: 110172784379358,
+            category: ["viral", "party", "new"],
+            tag: "VIRAL #6",
+            url: "https://www.roblox.com/games/110172784379358/SHELL-PARTY"
         },
 
         {
-            title: "MOUNT SUMBING 👻",
-            description:
-                "Pendakian horror dengan hantu pendaki dan hutan gelap.",
-            placeId: 74573694862156,
-            category: ["horror", "new"],
-            tag: "HORROR ID",
-            url:
-                "https://www.roblox.com/games/74573694862156/MOUNT-SUMBING"
+            title: "Stop the Timer",
+            description: "Party game 1v1 dengan banyak mode permainan dan gameplay cepat.",
+            placeId: 139988436996662,
+            category: ["viral", "popular", "party"],
+            tag: "VIRAL #7",
+            url: "https://www.roblox.com/games/139988436996662/Stop-the-Timer"
         },
 
         {
-            title: "Mount Ijen Horror",
-            description:
-                "Eksplorasi Ijen dalam suasana malam dengan kabut dan Blue Fire.",
-            placeId: 98736259765840,
-            category: ["horror", "realistic", "new"],
-            tag: "HORROR ID",
-            url:
-                "https://www.roblox.com/games/98736259765840/MOUNT-IJEN"
-        },
-
-
-        /* =================================================
-           🎉 PARTY
-        ================================================= */
-
-        {
-            title: "Ekspedisi Gunung Rinjani",
-            description:
-                "Ekspedisi dengan spot foto, dance, sepeda dan ATV.",
-            placeId: 95656495100644,
-            category: ["party", "new", "realistic"],
-            tag: "HANGOUT",
-            url:
-                "https://www.roblox.com/games/95656495100644/Ekspedisi-Gunung-Rinjani"
+            title: "Realistic Drive Simulator Indonesia",
+            description: "Open-world driving Indonesia untuk eksplorasi, roleplay dan sosial.",
+            placeId: 10189328024,
+            category: ["viral", "popular", "realistic", "openworld"],
+            tag: "VIRAL #8",
+            url: "https://www.roblox.com/games/10189328024/Realistic-Drive-Simulator-Indonesia"
         },
 
         {
-            title: "MOUNT TRANGGULASIH",
-            description:
-                "Map gunung dengan cinematic mode dan berbagai spot hangout.",
-            placeId: 74052392386319,
-            category: ["party", "realistic", "viral"],
-            tag: "HANGOUT",
-            url:
-                "https://www.roblox.com/games/74052392386319/MOUNT-TRANGGULASIH"
+            title: "Saat Teduh",
+            description: "Hangout semi-realistic dengan hutan, laut, fishing, musik dan dance.",
+            placeId: 80559954948316,
+            category: ["viral", "party", "realistic", "openworld"],
+            tag: "VIRAL #9",
+            url: "https://www.roblox.com/games/80559954948316/SAAT-TEDUH"
         },
-
-        {
-            title: "Gunung Kambuno",
-            description:
-                "Pendakian bersama teman dan eksplorasi alam.",
-            placeId: 90996930447931,
-            category: ["party", "popular", "realistic"],
-            tag: "HANGOUT",
-            url:
-                "https://www.roblox.com/games/90996930447931/Gunung-Kambuno"
-        },
-
-        {
-            title: "MOUNT RINJANI",
-            description:
-                "Ekspedisi gunung dan foto bersama teman.",
-            placeId: 138149789228609,
-            category: ["party", "realistic", "openworld"],
-            tag: "HANGOUT",
-            url:
-                "https://www.roblox.com/games/138149789228609/MOUNT-RINJANI"
-        },
-
-
-        /* =================================================
-           🆕 MAP BARU
-        ================================================= */
-
-        {
-            title: "Mount Merbabu",
-            description:
-                "Map baru Gunung Merbabu dengan savannah dan hutan pinus.",
-            placeId: 114440555601511,
-            category: ["new", "realistic", "openworld"],
-            tag: "NEW",
-            url:
-                "https://www.roblox.com/games/114440555601511/MOUNT-MERBABU"
-        },
-
-        {
-            title: "Mount Sumbing",
-            description:
-                "Map baru Gunung Sumbing dengan suasana pendakian realistis.",
-            placeId: 118392527498403,
-            category: ["new", "realistic", "openworld"],
-            tag: "NEW",
-            url:
-                "https://www.roblox.com/games/118392527498403/Mount-Sumbing"
-        },
-
-        {
-            title: "Ekspedisi Gunung Rinjani",
-            description:
-                "Map ekspedisi dengan checkpoint, dance, sepeda dan ATV.",
-            placeId: 95656495100644,
-            category: ["new", "party", "realistic"],
-            tag: "NEW",
-            url:
-                "https://www.roblox.com/games/95656495100644/Ekspedisi-Gunung-Rinjani"
-        },
-
-        {
-            title: "MOUNT SIJJIN",
-            description:
-                "Map hiking mistis dengan jumpscare dan suasana supernatural.",
-            placeId: 116761724761682,
-            category: ["new", "horror", "viral"],
-            tag: "NEW HORROR",
-            url:
-                "https://www.roblox.com/games/116761724761682/MOUNT-SIJJIN"
-        },
-
-        {
-            title: "MOUNT SUMBING 👻",
-            description:
-                "Pendakian horror dengan hantu pendaki dan hutan gelap.",
-            placeId: 74573694862156,
-            category: ["new", "horror"],
-            tag: "NEW HORROR",
-            url:
-                "https://www.roblox.com/games/74573694862156/MOUNT-SUMBING"
-        }
-    ],
-
-
-    /* =================================================
-       EXPERIENCE / GAME ROBLOX
-    ================================================= */
-
-    experiences: [
 
         {
             title: "The Hunt: Roblox 20",
-            description:
-                "Event Roblox 20 dengan quest dan berbagai pengalaman dari era Roblox.",
+            description: "Event besar ulang tahun ke-20 Roblox dengan perjalanan melewati sejarah Roblox.",
             placeId: 74205509034203,
-            tag: "TERKINI",
-            url:
-                "https://www.roblox.com/games/74205509034203"
+            category: ["viral", "popular", "new"],
+            tag: "EVENT VIRAL",
+            url: "https://www.roblox.com/games/74205509034203"
         },
+
+
+        /* =================================================
+           2. PALING RAMAI — 10
+           ================================================= */
 
         {
             title: "Brookhaven RP",
-            description:
-                "Roleplay populer untuk bermain, bersosialisasi dan membuat cerita bersama pemain lain.",
+            description: "Roleplay sosial open-world dengan rumah, kendaraan dan aktivitas bersama.",
             placeId: 4924922222,
-            tag: "POPULAR",
-            url:
-                "https://www.roblox.com/games/4924922222/Brookhaven-RP"
+            category: ["popular", "party", "openworld", "rating"],
+            tag: "RAMAI",
+            url: "https://www.roblox.com/games/4924922222/Brookhaven-RP"
         },
 
         {
-            title: "Driving Empire",
-            description:
-                "Game driving open-world dengan koleksi kendaraan dan dunia luas.",
-            placeId: 3351674303,
-            tag: "DRIVING",
-            url:
-                "https://www.roblox.com/games/3351674303/Driving-Empire"
+            title: "Blox Fruits",
+            description: "Adventure RPG dengan eksplorasi pulau, combat dan progression.",
+            placeId: 2753915549,
+            category: ["popular", "openworld", "rating"],
+            tag: "RAMAI",
+            url: "https://www.roblox.com/games/2753915549/Blox-Fruits"
         },
 
         {
-            title: "DOORS",
-            description:
-                "Horror adventure dengan pintu, puzzle dan berbagai entity.",
-            placeId: 6516141723,
-            tag: "HORROR",
-            url:
-                "https://www.roblox.com/games/6516141723/DOORS"
+            title: "RIVALS",
+            description: "Competitive shooter Roblox dengan pertandingan cepat.",
+            placeId: 17625359962,
+            category: ["popular", "rating", "new"],
+            tag: "RAMAI",
+            url: "https://www.roblox.com/games/17625359962/RIVALS"
         },
 
         {
-            title: "Jailbreak",
-            description:
-                "Police versus criminals dalam dunia open-world.",
-            placeId: 606849621,
-            tag: "ACTION",
-            url:
-                "https://www.roblox.com/games/606849621/Jailbreak"
+            title: "99 Nights in the Forest",
+            description: "Survival adventure dengan eksplorasi hutan dan bertahan hidup.",
+            placeId: 79546208627805,
+            category: ["popular", "horror", "openworld"],
+            tag: "RAMAI",
+            url: "https://www.roblox.com/games/79546208627805"
         },
 
         {
             title: "Murder Mystery 2",
-            description:
-                "Game social deduction dengan Sheriff, Innocent dan Murderer.",
+            description: "Mystery multiplayer klasik dengan Sheriff, Innocent dan Murderer.",
             placeId: 142823291,
-            tag: "POPULAR",
-            url:
-                "https://www.roblox.com/games/142823291/Murder-Mystery-2"
+            category: ["popular", "rating", "party"],
+            tag: "RAMAI",
+            url: "https://www.roblox.com/games/142823291/Murder-Mystery-2"
+        },
+
+        {
+            title: "Adopt Me!",
+            description: "Social roleplay dan pet game dengan dunia untuk bermain bersama.",
+            placeId: 920587237,
+            category: ["popular", "party", "rating"],
+            tag: "RAMAI",
+            url: "https://www.roblox.com/games/920587237/Adopt-Me"
+        },
+
+        {
+            title: "Fish It!",
+            description: "Fishing adventure dengan koleksi ikan, eksplorasi dan progression.",
+            placeId: 121864768012064,
+            category: ["popular", "openworld", "new"],
+            tag: "RAMAI",
+            url: "https://www.roblox.com/games/121864768012064"
+        },
+
+        {
+            title: "Jujutsu Shenanigans",
+            description: "Combat arena dengan karakter dan teknik bertarung bergaya anime.",
+            placeId: 9391468976,
+            category: ["popular", "rating"],
+            tag: "RAMAI",
+            url: "https://www.roblox.com/games/9391468976/Jujutsu-Shenanigans"
+        },
+
+        {
+            title: "Pet Simulator 99",
+            description: "Simulator pet dengan koleksi, area progression dan trading.",
+            placeId: 8737899170,
+            category: ["popular", "rating"],
+            tag: "RAMAI",
+            url: "https://www.roblox.com/games/8737899170/Pet-Simulator-99"
+        },
+
+        {
+            title: "Dress To Impress",
+            description: "Fashion competition dengan outfit, runway dan voting pemain.",
+            placeId: 15101393054,
+            category: ["popular", "party", "rating"],
+            tag: "RAMAI",
+            url: "https://www.roblox.com/games/15101393054/Dress-To-Impress"
+        },
+
+
+        /* =================================================
+           3. RATING BAGUS — 10
+           ================================================= */
+
+        {
+            title: "Gunung Kambuno",
+            description: "Pendakian dengan hutan, danau dan air terjun.",
+            placeId: 90996930447931,
+            category: ["rating", "viral", "realistic", "openworld"],
+            tag: "RATING",
+            url: "https://www.roblox.com/games/90996930447931/Gunung-Kambuno"
+        },
+
+        {
+            title: "MOUNT TRANGGULASIH",
+            description: "Map hiking dengan savannah dan fitur cinematic.",
+            placeId: 74052392386319,
+            category: ["rating", "viral", "realistic", "openworld"],
+            tag: "RATING",
+            url: "https://www.roblox.com/games/74052392386319/MOUNT-TRANGGULASIH"
+        },
+
+        {
+            title: "MOUNT RINJANI",
+            description: "Rekreasi Gunung Rinjani dengan medan dan pemandangan alam.",
+            placeId: 138149789228609,
+            category: ["rating", "realistic", "openworld"],
+            tag: "RATING",
+            url: "https://www.roblox.com/games/138149789228609/MOUNT-RINJANI"
+        },
+
+        {
+            title: "Mount Sumbing",
+            description: "Hiking dengan cuaca, suhu, campfire dan checkpoint.",
+            placeId: 14963184269,
+            category: ["rating", "realistic", "openworld"],
+            tag: "RATING",
+            url: "https://www.roblox.com/games/14963184269/Mount-Sumbing"
+        },
+
+        {
+            title: "Mount Merbabu",
+            description: "Savannah, hutan pinus dan panorama pegunungan Jawa.",
+            placeId: 114440555601511,
+            category: ["rating", "realistic", "openworld", "new"],
+            tag: "RATING",
+            url: "https://www.roblox.com/games/114440555601511/MOUNT-MERBABU"
+        },
+
+        {
+            title: "Brookhaven RP",
+            description: "Roleplay sosial dengan dunia yang luas dan banyak aktivitas.",
+            placeId: 4924922222,
+            category: ["rating", "popular", "party", "openworld"],
+            tag: "RATING",
+            url: "https://www.roblox.com/games/4924922222/Brookhaven-RP"
+        },
+
+        {
+            title: "Adopt Me!",
+            description: "Roleplay sosial dan pet collection dengan komunitas besar.",
+            placeId: 920587237,
+            category: ["rating", "popular", "party"],
+            tag: "RATING",
+            url: "https://www.roblox.com/games/920587237/Adopt-Me"
+        },
+
+        {
+            title: "Murder Mystery 2",
+            description: "Mystery multiplayer yang tetap aktif dimainkan komunitas.",
+            placeId: 142823291,
+            category: ["rating", "popular", "party"],
+            tag: "RATING",
+            url: "https://www.roblox.com/games/142823291/Murder-Mystery-2"
+        },
+
+        {
+            title: "Dress To Impress",
+            description: "Fashion competition dengan runway dan voting.",
+            placeId: 15101393054,
+            category: ["rating", "popular", "party"],
+            tag: "RATING",
+            url: "https://www.roblox.com/games/15101393054/Dress-To-Impress"
+        },
+
+        {
+            title: "NUNGGUAN | Broken Silence",
+            description: "Horror story dengan atmosfer, mystery dan chapter.",
+            placeId: 125847422162067,
+            category: ["rating", "viral", "popular", "horror"],
+            tag: "RATING",
+            url: "https://www.roblox.com/games/125847422162067/NUNGGUAN-Broken-Silence"
+        },
+
+
+        /* =================================================
+           4. REALISTIC — 10
+           ================================================= */
+
+        {
+            title: "Realistic Drive Simulator Indonesia",
+            description: "Kota fiksi terinspirasi beberapa kota Indonesia dengan driving dan roleplay.",
+            placeId: 10189328024,
+            category: ["realistic", "openworld", "popular", "viral"],
+            tag: "REALISTIC",
+            url: "https://www.roblox.com/games/10189328024/Realistic-Drive-Simulator-Indonesia"
+        },
+
+        {
+            title: "Gunung Kambuno",
+            description: "Gunung dengan hutan, danau, air terjun dan jalur alam.",
+            placeId: 90996930447931,
+            category: ["realistic", "viral", "popular", "rating", "openworld"],
+            tag: "REALISTIC",
+            url: "https://www.roblox.com/games/90996930447931/Gunung-Kambuno"
+        },
+
+        {
+            title: "MOUNT TRANGGULASIH",
+            description: "Savannah dan jalur hiking dengan suasana alam.",
+            placeId: 74052392386319,
+            category: ["realistic", "viral", "popular", "rating", "openworld"],
+            tag: "REALISTIC",
+            url: "https://www.roblox.com/games/74052392386319/MOUNT-TRANGGULASIH"
+        },
+
+        {
+            title: "MOUNT RINJANI",
+            description: "Gunung dengan hutan berkabut, medan terjal dan Segara Anak.",
+            placeId: 138149789228609,
+            category: ["realistic", "rating", "openworld"],
+            tag: "REALISTIC",
+            url: "https://www.roblox.com/games/138149789228609/MOUNT-RINJANI"
+        },
+
+        {
+            title: "Mount Sumbing",
+            description: "Hiking dengan cuaca, kabut, camp dan cinematic view.",
+            placeId: 14963184269,
+            category: ["realistic", "rating", "openworld"],
+            tag: "REALISTIC",
+            url: "https://www.roblox.com/games/14963184269/Mount-Sumbing"
+        },
+
+        {
+            title: "Mount Merbabu",
+            description: "Savannah, hutan pinus dan panorama pegunungan.",
+            placeId: 114440555601511,
+            category: ["realistic", "rating", "openworld", "new"],
+            tag: "REALISTIC",
+            url: "https://www.roblox.com/games/114440555601511/MOUNT-MERBABU"
+        },
+
+        {
+            title: "Mount IJEN",
+            description: "Kawah Ijen dengan hutan tropis, kabut dan Blue Fire.",
+            placeId: 98736259765840,
+            category: ["realistic", "openworld", "new"],
+            tag: "REALISTIC",
+            url: "https://www.roblox.com/games/98736259765840/MOUNT-IJEN"
+        },
+
+        {
+            title: "Saat Teduh",
+            description: "Hutan hijau, laut, fishing dan suasana hangout semi-realistic.",
+            placeId: 80559954948316,
+            category: ["realistic", "party", "openworld", "viral"],
+            tag: "REALISTIC",
+            url: "https://www.roblox.com/games/80559954948316/SAAT-TEDUH"
+        },
+
+        {
+            title: "MOUNT SUMBING [NEW]",
+            description: "Eksplorasi gunung dengan tiga puncak, cuaca dan cinematic view.",
+            placeId: 118392527498403,
+            category: ["realistic", "openworld", "new"],
+            tag: "REALISTIC",
+            url: "https://www.roblox.com/games/118392527498403/Mount-Sumbing"
+        },
+
+        {
+            title: "Ekspedisi Gunung Rinjani",
+            description: "Ekspedisi Rinjani dengan checkpoint, carry, dance dan kendaraan.",
+            placeId: 95656495100644,
+            category: ["realistic", "openworld", "new"],
+            tag: "REALISTIC",
+            url: "https://www.roblox.com/games/95656495100644/Ekspedisi-Gunung-Rinjani"
+        },
+
+
+        /* =================================================
+           5. OPEN WORLD — 10
+           ================================================= */
+
+        {
+            title: "Realistic Drive Simulator Indonesia",
+            description: "Kota open-world Indonesia untuk driving dan roleplay.",
+            placeId: 10189328024,
+            category: ["openworld", "realistic", "popular", "viral"],
+            tag: "OPEN WORLD",
+            url: "https://www.roblox.com/games/10189328024/Realistic-Drive-Simulator-Indonesia"
+        },
+
+        {
+            title: "Brookhaven RP",
+            description: "Dunia sosial open-world dengan rumah, kendaraan dan roleplay.",
+            placeId: 4924922222,
+            category: ["openworld", "popular", "party", "rating"],
+            tag: "OPEN WORLD",
+            url: "https://www.roblox.com/games/4924922222/Brookhaven-RP"
+        },
+
+        {
+            title: "Blox Fruits",
+            description: "Dunia luas dengan pulau, quest, combat dan eksplorasi.",
+            placeId: 2753915549,
+            category: ["openworld", "popular", "rating"],
+            tag: "OPEN WORLD",
+            url: "https://www.roblox.com/games/2753915549/Blox-Fruits"
+        },
+
+        {
+            title: "Gunung Kambuno",
+            description: "Eksplorasi hutan, danau, air terjun dan puncak.",
+            placeId: 90996930447931,
+            category: ["openworld", "viral", "popular", "realistic", "rating"],
+            tag: "OPEN WORLD",
+            url: "https://www.roblox.com/games/90996930447931/Gunung-Kambuno"
+        },
+
+        {
+            title: "MOUNT RINJANI",
+            description: "Eksplorasi jalur gunung sampai kawasan Segara Anak.",
+            placeId: 138149789228609,
+            category: ["openworld", "realistic", "rating"],
+            tag: "OPEN WORLD",
+            url: "https://www.roblox.com/games/138149789228609/MOUNT-RINJANI"
+        },
+
+        {
+            title: "MOUNT TRANGGULASIH",
+            description: "Eksplorasi savannah dan jalur pegunungan.",
+            placeId: 74052392386319,
+            category: ["openworld", "realistic", "viral", "popular", "rating"],
+            tag: "OPEN WORLD",
+            url: "https://www.roblox.com/games/74052392386319/MOUNT-TRANGGULASIH"
+        },
+
+        {
+            title: "Mount Merbabu",
+            description: "Eksplorasi savannah, hutan pinus dan pegunungan.",
+            placeId: 114440555601511,
+            category: ["openworld", "realistic", "new", "rating"],
+            tag: "OPEN WORLD",
+            url: "https://www.roblox.com/games/114440555601511/MOUNT-MERBABU"
+        },
+
+        {
+            title: "Mount IJEN",
+            description: "Eksplorasi Kawah Ijen dan Blue Fire.",
+            placeId: 98736259765840,
+            category: ["openworld", "realistic", "new"],
+            tag: "OPEN WORLD",
+            url: "https://www.roblox.com/games/98736259765840/MOUNT-IJEN"
+        },
+
+        {
+            title: "Saat Teduh",
+            description: "Hutan, laut, fishing, treasure hunting dan hangout.",
+            placeId: 80559954948316,
+            category: ["openworld", "party", "realistic", "viral"],
+            tag: "OPEN WORLD",
+            url: "https://www.roblox.com/games/80559954948316/SAAT-TEDUH"
+        },
+
+        {
+            title: "MOUNT SUMBING [NEW]",
+            description: "Eksplorasi tiga puncak gunung dengan weather dan freecam.",
+            placeId: 118392527498403,
+            category: ["openworld", "realistic", "new"],
+            tag: "OPEN WORLD",
+            url: "https://www.roblox.com/games/118392527498403/Mount-Sumbing"
+        },
+
+
+        /* =================================================
+           6. HORROR — 10
+           ================================================= */
+
+        {
+            title: "Forsaken",
+            description: "Horror multiplayer dengan survival dan gameplay kompetitif.",
+            placeId: 18687417158,
+            category: ["horror", "popular", "trending"],
+            tag: "HORROR",
+            url: "https://www.roblox.com/games/18687417158/Forsaken"
+        },
+
+        {
+            title: "Evade",
+            description: "Survival horror dengan kejar-kejaran dan map multiplayer.",
+            placeId: 9872472334,
+            category: ["horror", "popular", "party"],
+            tag: "HORROR",
+            url: "https://www.roblox.com/games/9872472334/Evade"
+        },
+
+        {
+            title: "DOORS",
+            description: "Horror exploration dengan pintu, entity dan puzzle.",
+            placeId: 6516141723,
+            category: ["horror", "popular", "rating"],
+            tag: "HORROR",
+            url: "https://www.roblox.com/games/6516141723/DOORS"
+        },
+
+        {
+            title: "Dandy's World",
+            description: "Horror survival dengan karakter unik dan dunia penuh bahaya.",
+            placeId: 16124321365,
+            category: ["horror", "popular", "new"],
+            tag: "HORROR",
+            url: "https://www.roblox.com/games/16124321365/Dandys-World"
+        },
+
+        {
+            title: "NUNGGUAN | Broken Silence",
+            description: "Psychological horror Indonesia dengan mystery dan chapter.",
+            placeId: 125847422162067,
+            category: ["horror", "viral", "popular", "rating"],
+            tag: "HORROR ID",
+            url: "https://www.roblox.com/games/125847422162067/NUNGGUAN-Broken-Silence"
+        },
+
+        {
+            title: "KERAMAT Dusun Pocong",
+            description: "Horror Indonesia bertema desa dan pemakaman keramat.",
+            placeId: 138879663836413,
+            category: ["horror", "viral", "new"],
+            tag: "HORROR ID",
+            url: "https://www.roblox.com/games/138879663836413/KERAMAT-Dusun-Pocong"
+        },
+
+        {
+            title: "MOUNT SIJJIN",
+            description: "Pendakian horror dengan jumpscare dan kejadian supernatural.",
+            placeId: 116761724761682,
+            category: ["horror", "viral", "new"],
+            tag: "HORROR ID",
+            url: "https://www.roblox.com/games/116761724761682/MOUNT-SIJJIN"
+        },
+
+        {
+            title: "Ojek Anomalies",
+            description: "Analog horror Indonesia dengan suasana jalan malam dan ojek.",
+            placeId: 93891127569519,
+            category: ["horror", "new"],
+            tag: "HORROR ID",
+            url: "https://www.roblox.com/games/93891127569519/Ojek-Anomalies"
+        },
+
+        {
+            title: "MOUNT IJEN",
+            description: "Eksplorasi Kawah Ijen dengan kabut, malam dan Blue Fire.",
+            placeId: 98736259765840,
+            category: ["horror", "realistic", "new"],
+            tag: "HORROR",
+            url: "https://www.roblox.com/games/98736259765840/MOUNT-IJEN"
         },
 
         {
             title: "Piggy",
-            description:
-                "Horror survival dengan puzzle dan pengejaran.",
-            placeId: 4623386862,
+            description: "Survival horror dengan puzzle, chase dan berbagai chapter.",
+            placeId: 6219326244,
+            category: ["horror", "popular", "rating"],
             tag: "HORROR",
-            url:
-                "https://www.roblox.com/games/4623386862/Piggy"
+            url: "https://www.roblox.com/games/6219326244/Piggy"
+        },
+
+
+        /* =================================================
+           7. PARTY — 10
+           ================================================= */
+
+        {
+            title: "SHELL PARTY",
+            description: "Gas station party 24/7 dengan live music, dance dan social hangout.",
+            placeId: 110172784379358,
+            category: ["party", "viral", "new"],
+            tag: "PARTY",
+            url: "https://www.roblox.com/games/110172784379358/SHELL-PARTY"
         },
 
         {
-            title: "The Mimic",
-            description:
-                "Horror story dengan cerita dan dunia yang terinspirasi dari legenda Jepang.",
-            placeId: 6243699076,
-            tag: "HORROR",
-            url:
-                "https://www.roblox.com/games/6243699076/The-Mimic"
+            title: "Stop the Timer",
+            description: "Party & casual game dengan banyak gamemode dan pertandingan cepat.",
+            placeId: 139988436996662,
+            category: ["party", "viral", "popular"],
+            tag: "PARTY",
+            url: "https://www.roblox.com/games/139988436996662/Stop-the-Timer"
+        },
+
+        {
+            title: "Brookhaven RP",
+            description: "Hangout, roleplay dan aktivitas sosial bersama teman.",
+            placeId: 4924922222,
+            category: ["party", "popular", "openworld", "rating"],
+            tag: "PARTY",
+            url: "https://www.roblox.com/games/4924922222/Brookhaven-RP"
+        },
+
+        {
+            title: "Adopt Me!",
+            description: "Social roleplay dengan pet, rumah dan aktivitas bersama.",
+            placeId: 920587237,
+            category: ["party", "popular", "rating"],
+            tag: "PARTY",
+            url: "https://www.roblox.com/games/920587237/Adopt-Me"
+        },
+
+        {
+            title: "Dress To Impress",
+            description: "Fashion party dengan runway, outfit dan voting.",
+            placeId: 15101393054,
+            category: ["party", "popular", "rating"],
+            tag: "PARTY",
+            url: "https://www.roblox.com/games/15101393054/Dress-To-Impress"
+        },
+
+        {
+            title: "Murder Mystery 2",
+            description: "Multiplayer social deduction dengan round cepat.",
+            placeId: 142823291,
+            category: ["party", "popular", "rating"],
+            tag: "PARTY",
+            url: "https://www.roblox.com/games/142823291/Murder-Mystery-2"
+        },
+
+        {
+            title: "Saat Teduh",
+            description: "Hangout santai dengan dance, music, fishing dan teman.",
+            placeId: 80559954948316,
+            category: ["party", "viral", "realistic", "openworld"],
+            tag: "PARTY",
+            url: "https://www.roblox.com/games/80559954948316/SAAT-TEDUH"
+        },
+
+        {
+            title: "Indo Hangout",
+            description: "Hangout Indonesia dengan voice chat, fishing, event dan social activities.",
+            placeId: 9788848685,
+            category: ["party", "rating", "openworld"],
+            tag: "PARTY ID",
+            url: "https://www.roblox.com/games/9788848685/Indo-Hangout"
+        },
+
+        {
+            title: "Epic Minigames",
+            description: "Kumpulan minigame multiplayer untuk dimainkan bersama teman.",
+            placeId: 277751860,
+            category: ["party", "popular", "rating"],
+            tag: "PARTY",
+            url: "https://www.roblox.com/games/277751860/Epic-Minigames"
+        },
+
+        {
+            title: "Work at a Pizza Place",
+            description: "Social roleplay klasik dengan pekerjaan, rumah dan aktivitas bersama.",
+            placeId: 192800,
+            category: ["party", "popular", "openworld"],
+            tag: "PARTY",
+            url: "https://www.roblox.com/games/192800/Work-at-a-Pizza-Place"
+        },
+
+
+        /* =================================================
+           8. MAP BARU — 10
+           ================================================= */
+
+        {
+            title: "KERAMAT Dusun Pocong",
+            description: "Horror Indonesia dengan desa, pemakaman dan suasana mistis.",
+            placeId: 138879663836413,
+            category: ["new", "horror", "viral"],
+            tag: "MAP BARU",
+            url: "https://www.roblox.com/games/138879663836413/KERAMAT-Dusun-Pocong"
+        },
+
+        {
+            title: "Mount Merbabu",
+            description: "Eksplorasi Merbabu dengan savannah dan hutan pinus.",
+            placeId: 114440555601511,
+            category: ["new", "realistic", "openworld", "rating"],
+            tag: "MAP BARU",
+            url: "https://www.roblox.com/games/114440555601511/MOUNT-MERBABU"
+        },
+
+        {
+            title: "MOUNT SIJJIN",
+            description: "Pendakian horror dengan unsur mistis dan jumpscare.",
+            placeId: 116761724761682,
+            category: ["new", "horror", "viral"],
+            tag: "MAP BARU",
+            url: "https://www.roblox.com/games/116761724761682/MOUNT-SIJJIN"
+        },
+
+        {
+            title: "MOUNT SUMBING [NEW]",
+            description: "Map gunung dengan tiga puncak, weather dan cinematic.",
+            placeId: 118392527498403,
+            category: ["new", "realistic", "openworld"],
+            tag: "MAP BARU",
+            url: "https://www.roblox.com/games/118392527498403/Mount-Sumbing"
+        },
+
+        {
+            title: "Ekspedisi Gunung Rinjani",
+            description: "Ekspedisi baru dengan checkpoint, dance, carry dan kendaraan.",
+            placeId: 95656495100644,
+            category: ["new", "realistic", "openworld"],
+            tag: "MAP BARU",
+            url: "https://www.roblox.com/games/95656495100644/Ekspedisi-Gunung-Rinjani"
+        },
+
+        {
+            title: "SHELL PARTY",
+            description: "Party map baru dengan live music, dance dan social hangout.",
+            placeId: 110172784379358,
+            category: ["new", "party", "viral"],
+            tag: "MAP BARU",
+            url: "https://www.roblox.com/games/110172784379358/SHELL-PARTY"
+        },
+
+        {
+            title: "Ojek Anomalies",
+            description: "Horror urban Indonesia bertema ojek dan jalan malam.",
+            placeId: 93891127569519,
+            category: ["new", "horror"],
+            tag: "MAP BARU",
+            url: "https://www.roblox.com/games/93891127569519/Ojek-Anomalies"
+        },
+
+        {
+            title: "Saat Teduh",
+            description: "Hangout alam dengan laut, hutan, fishing dan dance.",
+            placeId: 80559954948316,
+            category: ["new", "party", "realistic", "openworld"],
+            tag: "MAP BARU",
+            url: "https://www.roblox.com/games/80559954948316/SAAT-TEDUH"
+        },
+
+        {
+            title: "Mount IJEN",
+            description: "Eksplorasi Ijen dengan kawah, kabut dan Blue Fire.",
+            placeId: 98736259765840,
+            category: ["new", "realistic", "openworld", "horror"],
+            tag: "MAP BARU",
+            url: "https://www.roblox.com/games/98736259765840/MOUNT-IJEN"
+        },
+
+        {
+            title: "The Hunt: Roblox 20",
+            description: "Event besar Roblox 20 tahun yang sedang berlangsung.",
+            placeId: 74205509034203,
+            category: ["new", "viral", "popular"],
+            tag: "EVENT BARU",
+            url: "https://www.roblox.com/games/74205509034203"
         }
     ],
 
 
-    /* =================================================
-       NEWS
-    ================================================= */
+    /* =====================================================
+       EXPERIENCE TERKINI
+       ===================================================== */
+
+    experiences: [
+
+        {
+            title: "Brookhaven RP",
+            description: "Roleplay sosial paling dikenal di Roblox.",
+            placeId: 4924922222,
+            tag: "TRENDING",
+            url: "https://www.roblox.com/games/4924922222/Brookhaven-RP"
+        },
+
+        {
+            title: "Blox Fruits",
+            description: "Adventure RPG dengan dunia luas.",
+            placeId: 2753915549,
+            tag: "TRENDING",
+            url: "https://www.roblox.com/games/2753915549/Blox-Fruits"
+        },
+
+        {
+            title: "RIVALS",
+            description: "Competitive shooter cepat.",
+            placeId: 17625359962,
+            tag: "TRENDING",
+            url: "https://www.roblox.com/games/17625359962/RIVALS"
+        },
+
+        {
+            title: "99 Nights in the Forest",
+            description: "Survival adventure di tengah hutan.",
+            placeId: 79546208627805,
+            tag: "TRENDING",
+            url: "https://www.roblox.com/games/79546208627805"
+        },
+
+        {
+            title: "Murder Mystery 2",
+            description: "Social deduction multiplayer.",
+            placeId: 142823291,
+            tag: "POPULAR",
+            url: "https://www.roblox.com/games/142823291/Murder-Mystery-2"
+        },
+
+        {
+            title: "Adopt Me!",
+            description: "Pet dan social roleplay.",
+            placeId: 920587237,
+            tag: "POPULAR",
+            url: "https://www.roblox.com/games/920587237/Adopt-Me"
+        },
+
+        {
+            title: "Dress To Impress",
+            description: "Fashion competition dan runway.",
+            placeId: 15101393054,
+            tag: "TRENDING",
+            url: "https://www.roblox.com/games/15101393054/Dress-To-Impress"
+        },
+
+        {
+            title: "Forsaken",
+            description: "Horror multiplayer yang sedang ramai.",
+            placeId: 18687417158,
+            tag: "HORROR",
+            url: "https://www.roblox.com/games/18687417158/Forsaken"
+        },
+
+        {
+            title: "The Hunt: Roblox 20",
+            description: "Event resmi perayaan 20 tahun Roblox.",
+            placeId: 74205509034203,
+            tag: "EVENT",
+            url: "https://www.roblox.com/games/74205509034203"
+        },
+
+        {
+            title: "NUNGGUAN | Broken Silence",
+            description: "Horror story Indonesia dengan chapter dan mystery.",
+            placeId: 125847422162067,
+            tag: "VIRAL ID",
+            url: "https://www.roblox.com/games/125847422162067/NUNGGUAN-Broken-Silence"
+        }
+    ],
+
+
+    /* =====================================================
+       BERITA ROBLOX
+       ===================================================== */
 
     news: [
 
         {
-            title: "The Hunt: Roblox 20 Resmi Dimulai",
-            description:
-                "Roblox merayakan 20 tahun dengan event The Hunt yang menghadirkan berbagai quest dan pengalaman.",
+            title: "The Hunt: Roblox 20 Resmi Berlangsung",
+            description: "Roblox merayakan ulang tahun ke-20 melalui event The Hunt: Roblox 20.",
             date: "16 September 2026",
             source: "Roblox Newsroom",
-            image:
-                "https://about.roblox.com/wp-content/uploads/2026/09/Roblox20.jpg",
-            url:
-                "https://about.roblox.com/id/newsroom/2026/09/join-the-hunt-roblox-20"
+            image: "",
+            url: "https://about.roblox.com/id/newsroom/2026/09/join-the-hunt-roblox-20"
         },
 
         {
-            title: "Roblox 20 Menghadirkan Perjalanan Melintasi 20 Tahun",
-            description:
-                "Perayaan Roblox 20 menghadirkan pengalaman dan aktivitas yang mengambil inspirasi dari sejarah Roblox.",
+            title: "Roblox 20 Mengajak Pemain Menjelajahi 20 Tahun Sejarah Roblox",
+            description: "Pemain dapat mengikuti perjalanan dari game klasik hingga pengalaman modern.",
             date: "September 2026",
             source: "Roblox",
-            image:
-                "https://about.roblox.com/wp-content/uploads/2026/09/Roblox20.jpg",
-            url:
-                "https://about.roblox.com/id/newsroom/2026/09/join-the-hunt-roblox-20"
+            image: "",
+            url: "https://about.roblox.com/id/newsroom/2026/09/join-the-hunt-roblox-20"
+        },
+
+        {
+            title: "Roblox Fall Games Preview 2026",
+            description: "Roblox memperkenalkan sejumlah game dan update yang hadir pada musim gugur 2026.",
+            date: "2 September 2026",
+            source: "Roblox Newsroom",
+            image: "",
+            url: "https://about.roblox.com/en-au/newsroom/2026/09/roblox-fall-games-preview"
+        },
+
+        {
+            title: "Roblox Trending Games Terus Berubah",
+            description: "Halaman Trending Roblox menampilkan pengalaman yang mengalami pertumbuhan playtime tercepat.",
+            date: "September 2026",
+            source: "Roblox",
+            image: "",
+            url: "https://www.roblox.com/id/charts/top-trending"
+        },
+
+        {
+            title: "NUNGGUAN Mendapat Update Chapter",
+            description: "NUNGGUAN: Broken Silence terus mengembangkan chapter horror story dan mystery.",
+            date: "9 September 2026",
+            source: "Roblox",
+            image: "",
+            url: "https://www.roblox.com/games/125847422162067/NUNGGUAN-Broken-Silence"
         }
     ],
 
 
-    /* =================================================
+    /* =====================================================
        CREATOR / STUDIO
-    ================================================= */
+       ===================================================== */
 
     creator: [
 
         {
             title: "Roblox Creator Hub",
-            description:
-                "Dokumentasi resmi Roblox untuk membuat experience, avatar, scripting dan berbagai konten.",
+            description: "Pusat resmi untuk membuat dan mengembangkan pengalaman Roblox.",
             tag: "OFFICIAL",
-            url:
-                "https://create.roblox.com/docs"
+            url: "https://create.roblox.com/"
+        },
+
+        {
+            title: "Creator Documentation",
+            description: "Dokumentasi resmi Roblox untuk scripting, building dan publishing.",
+            tag: "DOCS",
+            url: "https://create.roblox.com/docs"
+        },
+
+        {
+            title: "Creator Store",
+            description: "Model, plugin, audio dan asset untuk membantu development.",
+            tag: "STORE",
+            url: "https://create.roblox.com/store"
         },
 
         {
             title: "Roblox Studio",
-            description:
-                "Lingkungan pengembangan resmi Roblox untuk membuat dan mengembangkan experience.",
+            description: "Software utama untuk membuat pengalaman Roblox.",
             tag: "STUDIO",
-            url:
-                "https://create.roblox.com/"
+            url: "https://create.roblox.com/docs/studio"
         },
 
         {
-            title: "Roblox Creator Store",
-            description:
-                "Cari model, plugin, audio, UI dan berbagai resource untuk Roblox Studio.",
-            tag: "STORE",
-            url:
-                "https://create.roblox.com/store"
+            title: "Roblox Creator Dashboard",
+            description: "Kelola experience, analytics, monetization dan creator tools.",
+            tag: "DASHBOARD",
+            url: "https://create.roblox.com/dashboard"
         },
 
         {
-            title: "Roblox Marketplace",
-            description:
-                "Marketplace resmi Roblox untuk avatar item dan berbagai konten pengguna.",
-            tag: "MARKETPLACE",
-            url:
-                "https://www.roblox.com/catalog"
+            title: "Roblox Developer Forum",
+            description: "Forum komunitas developer Roblox.",
+            tag: "COMMUNITY",
+            url: "https://devforum.roblox.com/"
         }
     ],
 
 
-    /* =================================================
+    /* =====================================================
        TRENDING
-    ================================================= */
+       ===================================================== */
 
     trending: [
 
         {
-            rank: 1,
-            title: "The Hunt: Roblox 20",
-            description:
-                "Event Roblox 20 yang sedang menjadi perhatian komunitas.",
-            tag: "EVENT",
-            url:
-                "https://www.roblox.com/games/74205509034203"
+            title: "Brookhaven RP",
+            description: "Salah satu experience dengan jumlah pemain aktif yang sangat besar.",
+            tag: "#1",
+            url: "https://www.roblox.com/games/4924922222/Brookhaven-RP",
+            placeId: 4924922222
         },
 
         {
-            rank: 2,
+            title: "Blox Fruits",
+            description: "Adventure RPG populer dengan dunia dan progression besar.",
+            tag: "#2",
+            url: "https://www.roblox.com/games/2753915549/Blox-Fruits",
+            placeId: 2753915549
+        },
+
+        {
+            title: "RIVALS",
+            description: "Competitive shooter dengan match cepat.",
+            tag: "#3",
+            url: "https://www.roblox.com/games/17625359962/RIVALS",
+            placeId: 17625359962
+        },
+
+        {
+            title: "99 Nights in the Forest",
+            description: "Survival horror adventure yang sedang ramai.",
+            tag: "#4",
+            url: "https://www.roblox.com/games/79546208627805",
+            placeId: 79546208627805
+        },
+
+        {
+            title: "Murder Mystery 2",
+            description: "Social deduction klasik yang tetap ramai dimainkan.",
+            tag: "#5",
+            url: "https://www.roblox.com/games/142823291/Murder-Mystery-2",
+            placeId: 142823291
+        },
+
+        {
             title: "NUNGGUAN | Broken Silence",
-            description:
-                "Horror Indonesia dengan jutaan kunjungan.",
-            tag: "HORROR",
-            url:
-                "https://www.roblox.com/games/125847422162067/NUNGGUAN-Broken-Silence"
+            description: "Horror story Indonesia dengan jutaan kunjungan.",
+            tag: "VIRAL ID",
+            url: "https://www.roblox.com/games/125847422162067/NUNGGUAN-Broken-Silence",
+            placeId: 125847422162067
         },
 
         {
-            rank: 3,
             title: "Gunung Kambuno",
-            description:
-                "Map pendakian Indonesia dengan lebih dari satu juta kunjungan.",
-            tag: "MAP",
-            url:
-                "https://www.roblox.com/games/90996930447931/Gunung-Kambuno"
+            description: "Map Indonesia dengan lebih dari satu juta kunjungan.",
+            tag: "MAP ID",
+            url: "https://www.roblox.com/games/90996930447931/Gunung-Kambuno",
+            placeId: 90996930447931
         },
 
         {
-            rank: 4,
-            title: "MOUNT TRANGGULASIH",
-            description:
-                "Map gunung Indonesia dengan cinematic mode dan berbagai fitur eksplorasi.",
-            tag: "MAP",
-            url:
-                "https://www.roblox.com/games/74052392386319/MOUNT-TRANGGULASIH"
+            title: "SHELL PARTY",
+            description: "Party hangout baru dengan live music dan dance.",
+            tag: "PARTY",
+            url: "https://www.roblox.com/games/110172784379358/SHELL-PARTY",
+            placeId: 110172784379358
         },
 
         {
-            rank: 5,
-            title: "MOUNT RINJANI",
-            description:
-                "Eksplorasi Gunung Rinjani dengan suasana realistis.",
-            tag: "MAP",
-            url:
-                "https://www.roblox.com/games/138149789228609/MOUNT-RINJANI"
+            title: "Stop the Timer",
+            description: "Party game dengan banyak mode permainan.",
+            tag: "PARTY",
+            url: "https://www.roblox.com/games/139988436996662/Stop-the-Timer",
+            placeId: 139988436996662
+        },
+
+        {
+            title: "The Hunt: Roblox 20",
+            description: "Event resmi Roblox yang sedang berlangsung.",
+            tag: "EVENT",
+            url: "https://www.roblox.com/games/74205509034203",
+            placeId: 74205509034203
         }
     ]
 };
 
 
-/* =====================================================
+/* =========================================================
    HELPER
-===================================================== */
+   ========================================================= */
 
 function escapeHTML(value) {
     return String(value ?? "")
@@ -819,68 +1136,122 @@ function escapeHTML(value) {
 }
 
 
-function safeURL(value) {
-    try {
-        const url = new URL(value, window.location.href);
+function safeURL(url) {
 
-        if (
-            url.protocol === "https:" ||
-            url.protocol === "http:"
-        ) {
-            return url.href;
-        }
-
-        return "#";
-    } catch {
+    if (!url) {
         return "#";
     }
+
+    try {
+
+        const parsed = new URL(url, window.location.href);
+
+        if (
+            parsed.protocol === "https:" ||
+            parsed.protocol === "http:"
+        ) {
+            return parsed.href;
+        }
+
+    } catch (error) {
+        console.warn("URL tidak valid:", url);
+    }
+
+    return "#";
 }
 
 
-/* =====================================================
-   THUMBNAIL ROBLOX
-===================================================== */
+function placeholderImage(title) {
+
+    const text = encodeURIComponent(
+        String(title || "FANDIRA").slice(0, 35)
+    );
+
+    return `
+        <div class="fandira-image-placeholder">
+            <span>${escapeHTML(title || "FANDIRA")}</span>
+        </div>
+    `;
+}
+
+
+function imageHTML(src, alt) {
+
+    if (!src) {
+        return placeholderImage(alt);
+    }
+
+    return `
+        <img
+            src="${safeURL(src)}"
+            alt="${escapeHTML(alt)}"
+            loading="lazy"
+            onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"
+        >
+        <div class="fandira-image-placeholder" style="display:none;">
+            <span>${escapeHTML(alt)}</span>
+        </div>
+    `;
+}
+
+
+/* =========================================================
+   ROBLOX THUMBNAIL
+   ========================================================= */
 
 async function getPlaceThumbnails(placeIds) {
+
+    const result = {};
 
     const ids = [
         ...new Set(
             placeIds
                 .map(Number)
-                .filter(id => Number.isFinite(id) && id > 0)
+                .filter(Boolean)
         )
     ];
 
     if (!ids.length) {
-        return {};
+        return result;
     }
-
-    const result = {};
 
     try {
 
-        const url =
+        const endpoint =
             "https://thumbnails.roblox.com/v1/places/gameicons" +
             "?placeIds=" +
-            ids.join(",") +
+            encodeURIComponent(ids.join(",")) +
             "&size=768x432" +
             "&format=Png" +
             "&isCircular=false";
 
-        const response = await fetch(url);
+        const response = await fetch(endpoint);
 
         if (!response.ok) {
-            throw new Error("Thumbnail request failed");
+            throw new Error(
+                "Thumbnail Roblox gagal: " +
+                response.status
+            );
         }
 
         const data = await response.json();
 
-        if (Array.isArray(data.data)) {
+        if (
+            data &&
+            Array.isArray(data.data)
+        ) {
 
             data.data.forEach(item => {
 
-                if (item && item.targetId && item.imageUrl) {
-                    result[item.targetId] = item.imageUrl;
+                if (
+                    item &&
+                    item.targetId &&
+                    item.imageUrl
+                ) {
+
+                    result[String(item.targetId)] =
+                        item.imageUrl;
+
                 }
 
             });
@@ -890,7 +1261,7 @@ async function getPlaceThumbnails(placeIds) {
     } catch (error) {
 
         console.warn(
-            "FANDIRA thumbnail error:",
+            "Tidak bisa mengambil thumbnail Roblox:",
             error
         );
 
@@ -900,485 +1271,566 @@ async function getPlaceThumbnails(placeIds) {
 }
 
 
-/* =====================================================
-   IMAGE
-===================================================== */
+/* =========================================================
+   CARD WRAPPER
+   ========================================================= */
 
-function imageHTML(src, alt) {
-
-    const safeSrc = safeURL(src);
-
-    if (safeSrc === "#") {
-        return `
-            <div class="card-image-placeholder">
-                FANDIRA
-            </div>
-        `;
-    }
+function cardLink(url, content) {
 
     return `
-        <img
-            src="${escapeHTML(safeSrc)}"
-            alt="${escapeHTML(alt)}"
-            loading="lazy"
-            onerror="
-                this.style.display='none';
-                this.nextElementSibling.style.display='flex';
-            "
+        <a
+            href="${safeURL(url)}"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="fandira-card-link"
         >
-        <div
-            class="card-image-placeholder"
-            style="display:none;"
-        >
-            FANDIRA
-        </div>
+            ${content}
+        </a>
     `;
 }
 
 
-/* =====================================================
+/* =========================================================
    UGC
-===================================================== */
+   ========================================================= */
 
 function renderUGC() {
 
     const grid =
         document.getElementById("ugcGrid");
 
-    if (!grid) return;
-
-    if (!Array.isArray(FANDIRA.ugc)) {
-        grid.innerHTML = "";
+    if (!grid) {
         return;
     }
 
-    grid.innerHTML =
-        FANDIRA.ugc.map(item => {
+    try {
 
-            return `
-                <a
-                    class="ugc-card"
-                    href="${escapeHTML(safeURL(item.url))}"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
+        grid.innerHTML =
+            FANDIRA.ugc
+                .map(item => {
 
-                    <div class="ugc-card-image">
-                        ${imageHTML(
-                            item.image,
-                            item.title
-                        )}
-                    </div>
+                    return `
+                        <article class="ugc-card">
 
-                    <div class="ugc-card-body">
+                            ${cardLink(
+                                item.url,
+                                `
+                                ${
+                                    item.image
+                                    ? imageHTML(
+                                        item.image,
+                                        item.title
+                                    )
+                                    : placeholderImage(
+                                        item.title
+                                    )
+                                }
 
-                        <div class="card-tag">
-                            ${escapeHTML(item.status || "UGC")}
-                        </div>
+                                <div class="card-body">
 
-                        <h3>
-                            ${escapeHTML(item.title)}
-                        </h3>
+                                    <span class="card-tag">
+                                        ${escapeHTML(item.tag)}
+                                    </span>
 
-                        <p>
-                            ${escapeHTML(item.description)}
-                        </p>
+                                    <h3>
+                                        ${escapeHTML(item.title)}
+                                    </h3>
 
-                        <div class="card-meta">
-                            <span>
-                                ${escapeHTML(item.creator || "")}
-                            </span>
+                                    <p>
+                                        ${escapeHTML(item.creator)}
+                                    </p>
 
-                            <span>
-                                ${escapeHTML(item.price || "")}
-                            </span>
-                        </div>
+                                    <strong>
+                                        ${escapeHTML(item.price)}
+                                    </strong>
 
-                    </div>
+                                </div>
+                                `
+                            )}
 
-                </a>
-            `;
+                        </article>
+                    `;
 
-        }).join("");
+                })
+                .join("");
+
+    } catch (error) {
+
+        console.error(
+            "UGC gagal dirender:",
+            error
+        );
+
+        grid.innerHTML = "";
+    }
 }
 
 
-/* =====================================================
+/* =========================================================
    MAP
-===================================================== */
+   ========================================================= */
+
+let currentMapFilter = "all";
+
 
 async function renderMaps(filter = "all") {
 
     const grid =
         document.getElementById("mapsGrid");
 
-    if (!grid) return;
-
-    let maps = FANDIRA.maps.filter(map => {
-
-        if (filter === "all") {
-            return true;
-        }
-
-        return (
-            Array.isArray(map.category) &&
-            map.category.includes(filter)
-        );
-
-    });
-
-
-    /* TOP 10 khusus filter VIRAL */
-
-    if (filter === "viral") {
-        maps = maps.slice(0, 10);
-    }
-
-
-    if (!maps.length) {
-
-        grid.innerHTML = `
-            <div class="empty-state">
-                Belum ada map untuk kategori ini.
-            </div>
-        `;
-
+    if (!grid) {
         return;
     }
 
+    currentMapFilter = filter;
 
-    grid.innerHTML = `
-        <div class="loading-state">
-            Memuat map Roblox...
-        </div>
-    `;
+    try {
 
+        let maps =
+            FANDIRA.maps.filter(map => {
 
-    const thumbnails =
-        await getPlaceThumbnails(
-            maps.map(map => map.placeId)
-        );
+                if (filter === "all") {
+                    return true;
+                }
 
+                return (
+                    Array.isArray(map.category) &&
+                    map.category.includes(filter)
+                );
 
-    grid.innerHTML =
-        maps.map((map, index) => {
-
-            const thumbnail =
-                thumbnails[map.placeId];
+            });
 
 
-            return `
-                <a
-                    class="map-card"
-                    href="${escapeHTML(safeURL(map.url))}"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
+        /* ---------------------------------------------
+           TOP 10 UNTUK FILTER
+           --------------------------------------------- */
 
-                    <div class="map-card-image">
+        maps = maps.slice(0, 10);
 
-                        ${
-                            thumbnail
-                                ? imageHTML(
-                                    thumbnail,
-                                    map.title
-                                )
-                                : `
-                                    <div class="card-image-placeholder">
-                                        ROBLOX MAP
-                                    </div>
-                                `
-                        }
 
-                    </div>
+        if (!maps.length) {
 
-                    <div class="map-card-body">
-
-                        <div class="card-tag">
-                            ${escapeHTML(map.tag || "MAP")}
-                        </div>
-
-                        <h3>
-                            ${escapeHTML(map.title)}
-                        </h3>
-
-                        <p>
-                            ${escapeHTML(map.description)}
-                        </p>
-
-                        ${
-                            filter === "viral"
-                                ? `
-                                    <div class="map-rank">
-                                        #${index + 1} MAP VIRAL
-                                    </div>
-                                  `
-                                : ""
-                        }
-
-                    </div>
-
-                </a>
+            grid.innerHTML = `
+                <div class="empty-state">
+                    Belum ada map untuk kategori ini.
+                </div>
             `;
 
-        }).join("");
+            return;
+        }
+
+
+        const thumbnails =
+            await getPlaceThumbnails(
+                maps.map(map => map.placeId)
+            );
+
+
+        grid.innerHTML =
+            maps
+                .map((map, index) => {
+
+                    const thumbnail =
+                        thumbnails[String(map.placeId)] ||
+                        "";
+
+
+                    const rank =
+                        filter !== "all"
+                        ? `
+                            <span class="map-rank">
+                                #${index + 1}
+                            </span>
+                          `
+                        : "";
+
+
+                    return `
+                        <article class="map-card">
+
+                            ${cardLink(
+                                map.url,
+                                `
+                                <div class="map-image-wrap">
+
+                                    ${
+                                        thumbnail
+                                        ? imageHTML(
+                                            thumbnail,
+                                            map.title
+                                        )
+                                        : placeholderImage(
+                                            map.title
+                                        )
+                                    }
+
+                                    ${rank}
+
+                                </div>
+
+
+                                <div class="card-body">
+
+                                    <span class="card-tag">
+                                        ${escapeHTML(map.tag)}
+                                    </span>
+
+                                    <h3>
+                                        ${escapeHTML(map.title)}
+                                    </h3>
+
+                                    <p>
+                                        ${escapeHTML(
+                                            map.description
+                                        )}
+                                    </p>
+
+                                </div>
+                                `
+                            )}
+
+                        </article>
+                    `;
+
+                })
+                .join("");
+
+    } catch (error) {
+
+        console.error(
+            "Map gagal dirender:",
+            error
+        );
+
+        grid.innerHTML = `
+            <div class="empty-state">
+                Map sedang dimuat ulang...
+            </div>
+        `;
+    }
 }
 
 
-/* =====================================================
+/* =========================================================
    EXPERIENCE
-===================================================== */
+   ========================================================= */
 
 async function renderExperiences() {
 
     const grid =
         document.getElementById("gamesGrid");
 
-    if (!grid) return;
+    if (!grid) {
+        return;
+    }
+
+    try {
+
+        const thumbnails =
+            await getPlaceThumbnails(
+                FANDIRA.experiences
+                    .map(item => item.placeId)
+            );
 
 
-    grid.innerHTML = `
-        <div class="loading-state">
-            Memuat Experience Roblox...
-        </div>
-    `;
+        grid.innerHTML =
+            FANDIRA.experiences
+                .map(item => {
+
+                    const thumbnail =
+                        thumbnails[String(item.placeId)] ||
+                        "";
 
 
-    const thumbnails =
-        await getPlaceThumbnails(
-            FANDIRA.experiences.map(
-                item => item.placeId
-            )
+                    return `
+                        <article class="game-card">
+
+                            ${cardLink(
+                                item.url,
+                                `
+                                ${
+                                    thumbnail
+                                    ? imageHTML(
+                                        thumbnail,
+                                        item.title
+                                    )
+                                    : placeholderImage(
+                                        item.title
+                                    )
+                                }
+
+                                <div class="card-body">
+
+                                    <span class="card-tag">
+                                        ${escapeHTML(item.tag)}
+                                    </span>
+
+                                    <h3>
+                                        ${escapeHTML(item.title)}
+                                    </h3>
+
+                                    <p>
+                                        ${escapeHTML(
+                                            item.description
+                                        )}
+                                    </p>
+
+                                </div>
+                                `
+                            )}
+
+                        </article>
+                    `;
+
+                })
+                .join("");
+
+    } catch (error) {
+
+        console.error(
+            "Experience gagal dirender:",
+            error
         );
 
-
-    grid.innerHTML =
-        FANDIRA.experiences.map(item => {
-
-            const thumbnail =
-                thumbnails[item.placeId];
-
-
-            return `
-                <a
-                    class="game-card"
-                    href="${escapeHTML(safeURL(item.url))}"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-
-                    <div class="game-card-image">
-
-                        ${
-                            thumbnail
-                                ? imageHTML(
-                                    thumbnail,
-                                    item.title
-                                )
-                                : `
-                                    <div class="card-image-placeholder">
-                                        ROBLOX
-                                    </div>
-                                `
-                        }
-
-                    </div>
-
-                    <div class="game-card-body">
-
-                        <div class="card-tag">
-                            ${escapeHTML(item.tag || "EXPERIENCE")}
-                        </div>
-
-                        <h3>
-                            ${escapeHTML(item.title)}
-                        </h3>
-
-                        <p>
-                            ${escapeHTML(item.description)}
-                        </p>
-
-                    </div>
-
-                </a>
-            `;
-
-        }).join("");
+    }
 }
 
 
-/* =====================================================
+/* =========================================================
    NEWS
-===================================================== */
+   ========================================================= */
 
 function renderNews() {
 
     const grid =
         document.getElementById("newsGrid");
 
-    if (!grid) return;
+    if (!grid) {
+        return;
+    }
 
+    try {
 
-    grid.innerHTML =
-        FANDIRA.news.map(item => {
+        grid.innerHTML =
+            FANDIRA.news
+                .map(item => {
 
-            return `
-                <a
-                    class="news-card"
-                    href="${escapeHTML(safeURL(item.url))}"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
+                    return `
+                        <article class="news-card">
 
-                    <div class="news-card-image">
-
-                        ${
-                            item.image
-                                ? imageHTML(
-                                    item.image,
-                                    item.title
-                                )
-                                : `
-                                    <div class="card-image-placeholder">
-                                        NEWS
-                                    </div>
+                            ${cardLink(
+                                item.url,
                                 `
-                        }
+                                ${
+                                    item.image
+                                    ? imageHTML(
+                                        item.image,
+                                        item.title
+                                    )
+                                    : placeholderImage(
+                                        item.source
+                                    )
+                                }
 
-                    </div>
+                                <div class="card-body">
 
-                    <div class="news-card-body">
+                                    <span class="card-tag">
+                                        ${escapeHTML(item.source)}
+                                    </span>
 
-                        <div class="card-tag">
-                            ${escapeHTML(item.source || "NEWS")}
-                        </div>
+                                    <h3>
+                                        ${escapeHTML(item.title)}
+                                    </h3>
 
-                        <h3>
-                            ${escapeHTML(item.title)}
-                        </h3>
+                                    <p>
+                                        ${escapeHTML(
+                                            item.description
+                                        )}
+                                    </p>
 
-                        <p>
-                            ${escapeHTML(item.description)}
-                        </p>
+                                    <small>
+                                        ${escapeHTML(item.date)}
+                                    </small>
 
-                        <div class="card-meta">
-                            ${escapeHTML(item.date || "")}
-                        </div>
+                                </div>
+                                `
+                            )}
 
-                    </div>
+                        </article>
+                    `;
 
-                </a>
-            `;
+                })
+                .join("");
 
-        }).join("");
+    } catch (error) {
+
+        console.error(
+            "News gagal dirender:",
+            error
+        );
+
+    }
 }
 
 
-/* =====================================================
+/* =========================================================
    CREATOR
-===================================================== */
+   ========================================================= */
 
 function renderCreator() {
 
     const grid =
         document.getElementById("creatorGrid");
 
-    if (!grid) return;
+    if (!grid) {
+        return;
+    }
 
+    try {
 
-    grid.innerHTML =
-        FANDIRA.creator.map(item => {
+        grid.innerHTML =
+            FANDIRA.creator
+                .map(item => {
 
-            return `
-                <a
-                    class="creator-card"
-                    href="${escapeHTML(safeURL(item.url))}"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
+                    return `
+                        <article class="creator-card">
 
-                    <div class="creator-card-body">
+                            ${cardLink(
+                                item.url,
+                                `
+                                <div class="card-body">
 
-                        <div class="card-tag">
-                            ${escapeHTML(item.tag || "CREATOR")}
-                        </div>
+                                    <span class="card-tag">
+                                        ${escapeHTML(item.tag)}
+                                    </span>
 
-                        <h3>
-                            ${escapeHTML(item.title)}
-                        </h3>
+                                    <h3>
+                                        ${escapeHTML(item.title)}
+                                    </h3>
 
-                        <p>
-                            ${escapeHTML(item.description)}
-                        </p>
+                                    <p>
+                                        ${escapeHTML(
+                                            item.description
+                                        )}
+                                    </p>
 
-                    </div>
+                                </div>
+                                `
+                            )}
 
-                </a>
-            `;
+                        </article>
+                    `;
 
-        }).join("");
+                })
+                .join("");
+
+    } catch (error) {
+
+        console.error(
+            "Creator gagal dirender:",
+            error
+        );
+
+    }
 }
 
 
-/* =====================================================
+/* =========================================================
    TRENDING
-===================================================== */
+   ========================================================= */
 
-function renderTrending() {
+async function renderTrending() {
 
     const grid =
         document.getElementById("trendingGrid");
 
-    if (!grid) return;
+    if (!grid) {
+        return;
+    }
+
+    try {
+
+        const thumbnails =
+            await getPlaceThumbnails(
+                FANDIRA.trending
+                    .map(item => item.placeId)
+                    .filter(Boolean)
+            );
 
 
-    grid.innerHTML =
-        FANDIRA.trending.map(item => {
+        grid.innerHTML =
+            FANDIRA.trending
+                .map(item => {
 
-            return `
-                <a
-                    class="trending-card"
-                    href="${escapeHTML(safeURL(item.url))}"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
+                    const thumbnail =
+                        item.placeId
+                        ? thumbnails[String(item.placeId)] || ""
+                        : "";
 
-                    <div class="trending-rank">
-                        #${escapeHTML(item.rank)}
-                    </div>
 
-                    <div class="trending-card-body">
+                    return `
+                        <article class="trending-card">
 
-                        <div class="card-tag">
-                            ${escapeHTML(item.tag || "TRENDING")}
-                        </div>
+                            ${cardLink(
+                                item.url,
+                                `
+                                ${
+                                    thumbnail
+                                    ? imageHTML(
+                                        thumbnail,
+                                        item.title
+                                    )
+                                    : placeholderImage(
+                                        item.title
+                                    )
+                                }
 
-                        <h3>
-                            ${escapeHTML(item.title)}
-                        </h3>
+                                <div class="card-body">
 
-                        <p>
-                            ${escapeHTML(item.description)}
-                        </p>
+                                    <span class="card-tag">
+                                        ${escapeHTML(item.tag)}
+                                    </span>
 
-                    </div>
+                                    <h3>
+                                        ${escapeHTML(item.title)}
+                                    </h3>
 
-                </a>
-            `;
+                                    <p>
+                                        ${escapeHTML(
+                                            item.description
+                                        )}
+                                    </p>
 
-        }).join("");
+                                </div>
+                                `
+                            )}
+
+                        </article>
+                    `;
+
+                })
+                .join("");
+
+    } catch (error) {
+
+        console.error(
+            "Trending gagal dirender:",
+            error
+        );
+
+    }
 }
 
 
-/* =====================================================
-   MAP FILTER
-===================================================== */
+/* =========================================================
+   FILTER MAP
+   ========================================================= */
 
 function setupMapFilters() {
 
     const buttons =
         document.querySelectorAll(
-            ".map-filter-button"
+            "[data-map-filter]"
         );
 
 
@@ -1391,10 +1843,10 @@ function setupMapFilters() {
 
         button.addEventListener(
             "click",
-            () => {
+            async () => {
 
-                buttons.forEach(item => {
-                    item.classList.remove("active");
+                buttons.forEach(btn => {
+                    btn.classList.remove("active");
                 });
 
 
@@ -1406,7 +1858,7 @@ function setupMapFilters() {
                     "all";
 
 
-                renderMaps(filter);
+                await renderMaps(filter);
 
             }
         );
@@ -1415,9 +1867,9 @@ function setupMapFilters() {
 }
 
 
-/* =====================================================
+/* =========================================================
    NAVIGATION
-===================================================== */
+   ========================================================= */
 
 function setupNavigation() {
 
@@ -1446,7 +1898,9 @@ function setupNavigation() {
 
 
                 const target =
-                    document.querySelector(targetId);
+                    document.querySelector(
+                        targetId
+                    );
 
 
                 if (!target) {
@@ -1469,49 +1923,60 @@ function setupNavigation() {
 }
 
 
-/* =====================================================
+/* =========================================================
    INIT
-===================================================== */
+   ========================================================= */
 
 async function initFandira() {
 
-    try {
+    console.log(
+        "%cFANDIRA",
+        "font-size:24px;font-weight:bold;"
+    );
 
-        renderUGC();
+    console.log(
+        "Fandira website initialized."
+    );
 
-        await renderMaps("all");
 
-        await renderExperiences();
+    /* Jangan menunggu thumbnail untuk
+       membuat section lain tampil. */
 
-        renderNews();
+    renderUGC();
 
-        renderCreator();
+    renderNews();
 
-        renderTrending();
+    renderCreator();
 
-        setupMapFilters();
+    setupNavigation();
 
-        setupNavigation();
+    setupMapFilters();
 
-        console.log(
-            "FANDIRA berhasil dimuat."
-        );
 
-    } catch (error) {
+    /* Render map pertama */
 
-        console.error(
-            "FANDIRA initialization error:",
-            error
-        );
+    await renderMaps("all");
 
-    }
 
+    /* Experience */
+
+    await renderExperiences();
+
+
+    /* Trending */
+
+    await renderTrending();
+
+
+    console.log(
+        "Fandira selesai dimuat."
+    );
 }
 
 
-/* =====================================================
+/* =========================================================
    START
-===================================================== */
+   ========================================================= */
 
 if (
     document.readyState === "loading"
@@ -1519,11 +1984,25 @@ if (
 
     document.addEventListener(
         "DOMContentLoaded",
-        initFandira
+        () => {
+            initFandira()
+                .catch(error => {
+                    console.error(
+                        "FANDIRA INIT ERROR:",
+                        error
+                    );
+                });
+        }
     );
 
 } else {
 
-    initFandira();
+    initFandira()
+        .catch(error => {
+            console.error(
+                "FANDIRA INIT ERROR:",
+                error
+            );
+        });
 
 }
