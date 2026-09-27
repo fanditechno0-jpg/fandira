@@ -1,3 +1,4 @@
+
 "use strict";
 
 /* =========================================================
@@ -1137,6 +1138,283 @@ async function loadUGC() {
 
 
 /* =========================================================
+   ROBLOX 20TH ANNIVERSARY
+   THE HUNT: ROBLOX 20
+   ========================================================= */
+
+const ROBLOX20_UGC = {
+
+    title: "The Hunt: Roblox 20",
+
+    placeId: 74205509034203,
+
+    url:
+        "https://www.roblox.com/games/74205509034203/The-Hunt-Roblox-20",
+
+    eventDate:
+        "17 September – 28 September 2026",
+
+    description:
+        "Event resmi ulang tahun ke-20 Roblox. Jelajahi sejarah Roblox, selesaikan quest dan kumpulkan hadiah UGC eksklusif.",
+
+    rewards: [
+        "UGC eksklusif dari quest utama The Hunt: Roblox 20.",
+        "Hadiah virtual tambahan dari jalur rahasia.",
+        "20 Secret Quest dengan item eksklusif dan fragment.",
+        "20 fragment digunakan untuk membuka puzzle terakhir.",
+        "20 pemain pertama yang menyelesaikan puzzle terakhir berkesempatan mendapatkan Dominus eksklusif."
+    ],
+
+    howToGet: [
+        "Masuk ke The Hunt: Roblox 20 Hub.",
+        "Mulai dari Year Zero dan ikuti perjalanan tahun demi tahun.",
+        "Masuk ke experience yang ditampilkan pada tahun tersebut.",
+        "Selesaikan quest yang tersedia.",
+        "Kembali ke The Hunt Hub setelah quest selesai.",
+        "Lanjutkan ke tahun berikutnya dan klaim hadiah yang tersedia.",
+        "Selesaikan perjalanan 20 tahun untuk membuka Year Infinity.",
+        "Cari Secret Quest untuk mendapatkan fragment tambahan."
+    ],
+
+    plus: [
+        "Roblox Plus mendapatkan akses awal ke Hub.",
+        "Mendapat Classic avatar background dan profile frame.",
+        "Berpeluang mendapatkan item virtual eksklusif tambahan."
+    ]
+
+};
+
+
+/* =========================================================
+   RENDER ROBLOX 20
+   ========================================================= */
+
+function renderRoblox20UGC() {
+
+    const grid =
+        document.getElementById(
+            "ugcGrid"
+        );
+
+    if (!grid) {
+        return;
+    }
+
+
+    const eventCard = `
+
+        <article
+            class="ugc-card content-card roblox20-card"
+        >
+
+            <div
+                class="card-image"
+                style="
+                    min-height:220px;
+                    display:flex;
+                    align-items:center;
+                    justify-content:center;
+                    text-align:center;
+                    padding:30px;
+
+                    background:
+                    radial-gradient(
+                        circle at 20% 20%,
+                        rgba(53,217,255,.30),
+                        transparent 35%
+                    ),
+                    radial-gradient(
+                        circle at 80% 80%,
+                        rgba(155,92,255,.30),
+                        transparent 35%
+                    ),
+                    linear-gradient(
+                        135deg,
+                        #10152a,
+                        #19133d,
+                        #0b2030
+                    );
+
+                    position:relative;
+                    overflow:hidden;
+                "
+            >
+
+                <div>
+
+                    <div
+                        style="
+                            font-size:14px;
+                            letter-spacing:2px;
+                            opacity:.8;
+                            margin-bottom:10px;
+                        "
+                    >
+                        ROBLOX 20TH ANNIVERSARY
+                    </div>
+
+                    <strong
+                        style="
+                            font-size:28px;
+                            display:block;
+                            background:
+                            linear-gradient(
+                                90deg,
+                                #35d9ff,
+                                #9b5cff,
+                                #ff4fd8
+                            );
+                            -webkit-background-clip:text;
+                            background-clip:text;
+                            color:transparent;
+                        "
+                    >
+                        THE HUNT: ROBLOX 20
+                    </strong>
+
+                    <div
+                        style="
+                            margin-top:12px;
+                            font-size:14px;
+                            opacity:.85;
+                        "
+                    >
+                        20 TAHUN SEJARAH ROBLOX
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="card-body">
+
+                <span class="category">
+                    🎉 EVENT • UGC EKSKLUSIF
+                </span>
+
+
+                <h3>
+                    The Hunt: Roblox 20
+                </h3>
+
+
+                <p>
+                    ${escapeHTML(
+                        ROBLOX20_UGC.description
+                    )}
+                </p>
+
+
+                <p>
+                    <strong>📅</strong>
+                    ${escapeHTML(
+                        ROBLOX20_UGC.eventDate
+                    )}
+                </p>
+
+
+                <h4>
+                    🎁 HADIAH UGC
+                </h4>
+
+
+                <ul>
+
+                    ${ROBLOX20_UGC.rewards
+                        .map(
+                            reward => `
+                                <li>
+                                    ${escapeHTML(
+                                        reward
+                                    )}
+                                </li>
+                            `
+                        )
+                        .join("")
+                    }
+
+                </ul>
+
+
+                <h4>
+                    🎮 CARA MENDAPATKAN
+                </h4>
+
+
+                <ol>
+
+                    ${ROBLOX20_UGC.howToGet
+                        .map(
+                            step => `
+                                <li>
+                                    ${escapeHTML(
+                                        step
+                                    )}
+                                </li>
+                            `
+                        )
+                        .join("")
+                    }
+
+                </ol>
+
+
+                <h4>
+                    💠 ROBLOX PLUS
+                </h4>
+
+
+                <ul>
+
+                    ${ROBLOX20_UGC.plus
+                        .map(
+                            item => `
+                                <li>
+                                    ${escapeHTML(
+                                        item
+                                    )}
+                                </li>
+                            `
+                        )
+                        .join("")
+                    }
+
+                </ul>
+
+
+                <a
+                    href="${safeURL(
+                        ROBLOX20_UGC.url
+                    )}"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="card-button"
+                >
+                    🎮 MASUK THE HUNT →
+                </a>
+
+            </div>
+
+        </article>
+
+    `;
+
+
+    /*
+       Event Roblox 20 ditempatkan
+       paling atas pada section UGC.
+    */
+
+    grid.insertAdjacentHTML(
+        "afterbegin",
+        eventCard
+    );
+
+}
+
+
+/* =========================================================
    MAP
    ========================================================= */
 
@@ -1881,6 +2159,15 @@ async function initFandira() {
                 error
             )
         );
+
+
+    /*
+       TAMBAHAN:
+       Roblox 20 ditampilkan di bagian
+       paling atas UGC.
+    */
+
+    renderRoblox20UGC();
 
 
     await renderMaps("all")
